@@ -1,6 +1,6 @@
 ## My personal poetry blog
 
-Made with Gatsby.
+Made with Gatsby. Forked from https://github.com/devHudi/gatsby-starter-hoodie
 
 - Markdown
 - Dark Mode (Responsive to the settings of the OS)
