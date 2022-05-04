@@ -1,49 +1,15 @@
 import React, { useState, useEffect } from "react"
-import styled from "styled-components"
+import {
+  Date,
+  PostCount,
+  SeriesInform,
+  SeriesListWrapper,
+  SeriesWrapper,
+} from "./index.styled"
 import _ from "lodash"
 import { Link } from "gatsby"
 import Title from "components/Title"
 import Divider from "components/Divider"
-
-const SeriesListWrapper = styled.div`
-  margin-bottom: 60px;
-
-  @media (max-width: 768px) {
-    padding: 0 10px;
-  }
-`
-
-const SeriesWrapper = styled.div`
-  position: relative;
-  top: 0;
-  transition: all 0.5s;
-
-  @media (max-width: 768px) {
-    padding: 0 5px;
-  }
-`
-
-const SeriesInform = styled.div`
-  display: flex;
-  color: ${props => props.theme.colors.tertiaryColor};
-
-  @media (max-width: 600px) {
-    flex-flow: column nowrap;
-    align-items: initial;
-  }
-
-  & > span {
-    margin: 0 5px;
-  }
-`
-
-const Date = styled.p`
-  font-size: 1rem;
-`
-
-const PostCount = styled.p`
-  font-size: 1rem;
-`
 
 const checkIsScrollAtBottom = () => {
   return (

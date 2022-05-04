@@ -1,5 +1,4 @@
 import styled from "styled-components"
-
 import Header from "./Header"
 import Series from "./Series"
 import Body from "./Body"

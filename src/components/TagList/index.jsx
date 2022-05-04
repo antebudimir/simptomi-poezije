@@ -43,7 +43,7 @@ const TagList = ({ tagList, count, selected }) => {
         {tagList.map((tag, i) => (
           <StyledLink
             title={`Pogledaj sve postove s oznakom ${tag}`}
-            // key={JSON.stringify({ tag, i })}
+            key={JSON.stringify({ tag, i })}
             key={id}
             to={`/oznake?q=${tag}`}
           >

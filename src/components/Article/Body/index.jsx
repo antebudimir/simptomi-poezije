@@ -1,19 +1,9 @@
 import React, { useState, useEffect } from "react"
-import styled from "styled-components"
-
+import { Wrapper } from "./index.styled"
 import useOffsetTop from "hooks/useOffsetTop"
 
 import Toc from "./Toc"
 import StyledMarkdown from "./StyledMarkdown"
-
-const Wrapper = styled.div`
-  position: relative;
-  margin-bottom: 1rem;
-
-  @media (max-width: 768px) {
-    padding: 0 15px;
-  }
-`
 
 const Body = ({ html }) => {
   const [toc, setToc] = useState([])
@@ -30,7 +20,7 @@ const Body = ({ html }) => {
 
   return (
     <Wrapper>
-      {/* What the hell is this????????????????????????????????? */}
+    {/* Table of contents */}
       {/* <Toc items={toc} articleOffset={offsetTop} /> */}
 
       <StyledMarkdown

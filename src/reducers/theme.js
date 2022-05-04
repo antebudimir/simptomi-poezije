@@ -2,11 +2,9 @@ export const initialState = {
   theme: "light",
 }
 
-// action type 정의
 export const SET_LIGHT = "setLight"
 export const SET_DARK = "setDark"
 
-// action 정의
 export const setLight = {
   type: SET_LIGHT,
   data: {
@@ -21,7 +19,6 @@ export const setDark = {
   },
 }
 
-// reducer 정의
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_LIGHT: {

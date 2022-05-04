@@ -1,44 +1,13 @@
 import React, { useRef } from "react"
-import styled, { useTheme } from "styled-components"
+import { useTheme } from "styled-components"
 import { Link } from "gatsby"
 import { author } from "../../../../blog-config"
 import logo from "../../../../public/logo 7.png"
 import logoHovered from "../../../../public/logo 7-hovered.png"
 import logoNight from "../../../../public/logo-night.png"
 import logoNightHovered from "../../../../public/logo-night-hovered.png"
+import { FooterWrapper, Logo,FooterLink } from "./index.styled"
 
-const FooterWrapper = styled.footer`
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  border-top: 1px solid ${props => props.theme.colors.quaternaryColor};
-  margin-top: 32px;
-  padding: 1rem 0;
-  color: ${props => props.theme.colors.secondaryColor};
-  font-size: 1rem;
-  text-align: center;
-
-  & a:focus img {
-    transform: scale(1.1);
-    transition: transform ${props => props.theme.timing.primaryTiming};
-  }
-`
-
-const Logo = styled.img`
-  width: 10rem;
-  height: auto;
-  margin-block: 0 1rem;
-`
-
-const FooterLink = styled.a`
-  color: ${props => props.theme.colors.secondaryColor};
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    color: ${props => props.theme.colors.quinaryColor};
-  }
-`
 
 const Footer = () => {
   const theme = useTheme()

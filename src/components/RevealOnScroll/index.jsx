@@ -1,18 +1,6 @@
 import React from "react"
-import styled, { css } from "styled-components"
-
+import { StyledWrapper } from "./index.styled"
 import useScroll from "hooks/useScroll"
-
-const StyledWrapper = styled.div`
-  position: relative;
-  opacity: 0;
-  transition: ${props => props.theme.timing.primaryTiming} all ease;
-  ${props =>
-    props.visible &&
-    css`
-      opacity: 1;
-    `}
-`
 
 const RevealOnScroll = ({ revealAt, reverse, children }) => {
   const { y } = useScroll()

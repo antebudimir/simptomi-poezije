@@ -37,7 +37,7 @@ const BlogIndex = ({ data }) => {
 
       <Divider mt="48px" mb="48px" />
 
-      {/* <Sidebar tags={tags} postCount={posts.length} /> */}
+      <Sidebar tags={tags} postCount={posts.length} />
 
       <PostList postList={posts} />
     </Layout>

@@ -1,4 +1,10 @@
 import React from "react"
+import {
+  StyledEmailShareButton,
+  StyledFacebookShareButton,
+  StyledTelegramShareButton,
+  StyledWhatsappShareButton,
+} from "./Post.styled"
 import { Link, graphql } from "gatsby"
 import { title as siteTitle, siteUrl } from "../../blog-config"
 import SEO from "components/SEO"
@@ -11,17 +17,10 @@ import {
   TelegramIcon,
   WhatsappIcon,
 } from "react-share"
-import {
-  StyledEmailShareButton,
-  StyledFacebookShareButton,
-  StyledTelegramShareButton,
-  StyledWhatsappShareButton,
-} from "./ShareButtons.styled"
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
   const { previous, next, seriesList } = data
-
   const { title, date, update, tags, series } = post.frontmatter
   const { excerpt } = post
   const { readingTime, slug } = post.fields
