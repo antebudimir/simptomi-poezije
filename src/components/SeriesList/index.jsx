@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, Fragment } from "react"
 import {
   Date,
   PostCount,
@@ -54,7 +54,7 @@ const SeriesList = ({ seriesList }) => {
         }
 
         return (
-          <>
+          <Fragment key={i}>
             <SeriesWrapper>
               <Title size="bg">
                 <Link
@@ -81,7 +81,7 @@ const SeriesList = ({ seriesList }) => {
             {seriesCount - 1 !== i && seriesList.length - 1 !== i && (
               <Divider mt="48px" mb="32px" />
             )}
-          </>
+          </Fragment>
         )
       })}
     </SeriesListWrapper>

@@ -3,6 +3,8 @@ import _ from "lodash"
 import { Link } from "gatsby"
 import { Title, Wrapper, Tag } from "./index.styled"
 
+import { v4 as uuidv4 } from "uuid"
+
 const SideTagList = ({ tags, postCount }) => {
   return (
     <Wrapper>
@@ -16,7 +18,7 @@ const SideTagList = ({ tags, postCount }) => {
         </Tag>
 
         {_.map(tags, tag => (
-          <Tag>
+          <Tag key={uuidv4()}>
             <Link
               to={`/oznake?q=${tag.fieldValue}`}
               title={`Pogledaj sve postove s oznakom ${tag.fieldValue}`}

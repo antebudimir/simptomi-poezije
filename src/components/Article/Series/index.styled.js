@@ -1,9 +1,12 @@
 import styled from "styled-components"
 
 export const SeriesWrapper = styled.div`
-  margin-bottom: 32px;
-  padding: 16px;
+  margin-bottom: 48px;
   background-color: ${props => props.theme.colors.seriesBackground};
+
+  @media (max-width: 768px) {
+    padding: 0 12.8px;
+  }
 `
 
 export const SeriesHeader = styled.h2`

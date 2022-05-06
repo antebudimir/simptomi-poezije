@@ -1,7 +1,7 @@
 import React from "react"
-import SideTagList from "components/SideTagList"
 import { RelativeWrapper, SidebarWrapper } from "./index.styled"
-// import { Link } from "gatsby"
+import SideTagList from "components/SideTagList"
+import Subscribe from "components/Subscribe"
 
 const Sidebar = ({ tags, postCount }) => {
   return (
@@ -9,7 +9,7 @@ const Sidebar = ({ tags, postCount }) => {
       <SidebarWrapper>
         <SideTagList tags={tags} postCount={postCount} />
 
-        {/* ADD Subscribe field */}
+        <Subscribe />
       </SidebarWrapper>
     </RelativeWrapper>
   )

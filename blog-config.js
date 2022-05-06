@@ -12,8 +12,4 @@ module.exports = {
     instagram: "https://www.instagram.com",
     email: "mailto:inbox@antebudimir.com",
   },
-  utterances: {
-    repo: "antebudimir/simptomi-poezije",
-    type: "pathname",
-  },
 }

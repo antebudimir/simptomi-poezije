@@ -97,18 +97,7 @@ export const ArticleButtonTitle = styled.div`
 `
 
 export const CommentWrapper = styled.div`
-  @media (max-width: 768px) {
-    padding: 0 15px;
+  @media (max-width: 680px) {
+    padding: 0 12.8px;
   }
-`
-
-export const SpinnerWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: min-content;
-`
-
-export const HiddenWrapper = styled.div`
-  display: ${props => (props.isHidden ? "none" : "block")};
 `

@@ -1,10 +1,13 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  width: 10rem;
+  border-radius: ${props => props.theme.spacing.primaryRadius};
+  width: 18.75rem;
+  margin-bottom: 5rem;
   padding: 1rem;
   background-color: ${props => props.theme.colors.quaternaryColor};
   font-size: 1.1rem;
+  box-shadow: ${props => props.theme.colors.secondaryShadow};
 
   /* @media (max-width: 1300px) {
   display: none;

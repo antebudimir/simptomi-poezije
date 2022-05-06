@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import {
   ArticleButtonWrapper,
   ArticleButtonContainer,
@@ -8,19 +8,12 @@ import {
   ArrowFlexWrapper,
   Arrow,
   CommentWrapper,
-  SpinnerWrapper,
-  HiddenWrapper,
 } from "./index.styled"
 import { navigate } from "gatsby"
-import { useSelector } from "react-redux"
-import { useTheme } from "styled-components"
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"
-import Bio from "components/Bio"
+// import Bio from "components/Bio"
 import Divider from "components/Divider"
-import MDSpinner from "react-md-spinner"
-
-// import ReactUtterences from "react-utterances"
-// import { utterances } from "../../../../blog-config"
+import Comment from "../Comment"
 
 const ArticleButton = ({ right, children, onClick }) => {
   return (
@@ -43,57 +36,6 @@ const ArticleButton = ({ right, children, onClick }) => {
         </ArticleButtonTextWrapper>
       </ArrowFlexWrapper>
     </ArticleButtonWrapper>
-  )
-}
-
-const Spinner = () => {
-  const theme = useTheme()
-  return (
-    <SpinnerWrapper>
-      <MDSpinner singleColor={theme.colors.secondaryColor} />
-    </SpinnerWrapper>
-  )
-}
-
-const Comment = () => {
-  const { theme } = useSelector(state => state.theme)
-  const [flag, setFlag] = useState(false)
-
-  const setCommentTheme = () => {
-    const message = {
-      type: "set-theme",
-      theme: `github-${theme}`,
-    }
-
-    let utteranceIframe = null
-    utteranceIframe = document.querySelector("iframe.utterances-frame")
-
-    if (utteranceIframe) {
-      utteranceIframe.contentWindow.postMessage(message, "https://utteranc.es")
-    }
-  }
-
-  useEffect(() => {
-    setCommentTheme()
-  }, [theme])
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (!flag) {
-        setCommentTheme()
-        setFlag(true)
-      }
-    }, 2000)
-  }, [theme, flag])
-
-  return (
-    <>
-      {flag || <Spinner />}
-      <HiddenWrapper isHidden={!flag}>
-        {/* COMMENT SYSTEM SHOULD GO HERE instead of Utterances */}
-        {/* <ReactUtterences repo={utterances.repo} type={utterances.type} /> */}
-      </HiddenWrapper>
-    </>
   )
 }
 

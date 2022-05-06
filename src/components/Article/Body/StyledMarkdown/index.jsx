@@ -25,7 +25,7 @@ const StyledMarkdown = styled.div`
   }
 
   & > p:last-of-type {
-    margin-bottom: 48px;
+    margin-bottom: 0px;
   }
 
   & p {
@@ -91,55 +91,6 @@ const StyledMarkdown = styled.div`
   & blockquote blockquote {
     margin-top: 24px;
   }
-
-  /* & table {
-    border-collapse: collapse;
-  }
-
-  & th {
-    border-bottom: 2px solid ${props => props.theme.colors.quaternaryColor};
-    font-weight: 700;
-  }
-
-  & td {
-    border-top: 1px solid ${props => props.theme.colors.quaternaryColor};
-    border-bottom: 1px solid ${props => props.theme.colors.quaternaryColor};
-  } */
-
-  /* & td,
-  th {
-    padding: 8px;
-  }
-
-  & tr:first-child td {
-    border-top: none;
-  }
-
-  & tr:nth-child(even) {
-    background-color: ${props => props.theme.colors.tableBackground};
-  }
-
-  & tr:last-child td {
-    border-bottom: none;
-  }
-
-  & p > code {
-    word-break: break-all;
-  } */
-
-  /* & p > code.language-text,
-  & li > code.language-text,
-  & table code.language-text {
-    padding: 1.6px 4.8px;
-    font-size: 14.4px;
-    background-color: ${props => props.theme.colors.inlineCodeBackground};
-    font-weight: bold;
-    color: ${props => props.theme.colors.secondaryColor};
-  } */
-
-  /* & tr:nth-child(even) code.language-text {
-    background-color: ${props => props.theme.colors.inlineCodeBackgroundDarker};
-  } */
 
   & ul,
   & ol {
@@ -210,11 +161,6 @@ const StyledMarkdown = styled.div`
     padding: 1.6px 0;
     color: ${props => props.theme.colors.secondaryColor};
   }
-
-  /* & a:hover {
-    background-color: ${props => props.theme.colors.secondaryColor};
-    color: yellow;
-  } */
 `
 
 export default StyledMarkdown

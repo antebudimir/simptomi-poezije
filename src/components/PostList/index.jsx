@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, Fragment } from "react"
+import { Excerpt, PostListWrapper, PostWrapper, Date } from "./index.styled"
 import _ from "lodash"
 import { Link } from "gatsby"
 import Title from "components/Title"
 import Divider from "components/Divider"
 import TagList from "components/TagList"
-
-import useId from "@accessible/use-id"
-import { Excerpt, PostListWrapper, PostWrapper, Date } from "./index.styled"
 
 const checkIsScrollAtBottom = () => {
   return (
@@ -18,7 +16,6 @@ const checkIsScrollAtBottom = () => {
 
 const PostList = ({ postList }) => {
   const [postCount, setPostCount] = useState(10)
-  const id = useId()
 
   const handleMoreLoad = _.throttle(() => {
     if (checkIsScrollAtBottom() && postCount < postList.length) {
@@ -46,8 +43,8 @@ const PostList = ({ postList }) => {
         const { slug } = post.fields
 
         return (
-          <>
-            <PostWrapper tabIndex="0" key={id}>
+          <Fragment key={i}>
+            <PostWrapper tabIndex="0">
               <Title size="bg">
                 <Link to={slug} title={`Otvori post "${title}"`}>
                   {title}
@@ -64,7 +61,7 @@ const PostList = ({ postList }) => {
             {postCount - 1 !== i && postList.length - 1 !== i && (
               <Divider mt="48px" mb="32px" />
             )}
-          </>
+          </Fragment>
         )
       })}
     </PostListWrapper>

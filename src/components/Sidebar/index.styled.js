@@ -7,7 +7,7 @@ export const RelativeWrapper = styled.div`
 export const SidebarWrapper = styled.aside`
   position: absolute;
   top: 0;
-  right: -40%;
+  right: -60%;
 
   @media (max-width: 1300px) {
     display: none;
