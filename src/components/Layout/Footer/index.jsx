@@ -1,13 +1,12 @@
 import React, { useRef } from "react"
+import { FooterWrapper, Logo, FooterLink } from "./index.styled"
 import { useTheme } from "styled-components"
 import { Link } from "gatsby"
 import { author } from "../../../../blog-config"
-import logo from "../../../../public/logo 7.png"
-import logoHovered from "../../../../public/logo 7-hovered.png"
-import logoNight from "../../../../public/logo-night.png"
-import logoNightHovered from "../../../../public/logo-night-hovered.png"
-import { FooterWrapper, Logo,FooterLink } from "./index.styled"
-
+import logo from "assets/images/logo 7.png"
+import logoHovered from "assets/images/logo 7-hovered.png"
+import logoNight from "assets/images/logo-night.png"
+import logoNightHovered from "assets/images/logo-night-hovered.png"
 
 const Footer = () => {
   const theme = useTheme()
