@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import _ from "lodash"
-import { TagListWrapper } from "./oznake.styled"
+import styled from "styled-components"
 import SEO from "components/SEO"
 import filter from "lodash/filter"
 import { graphql, navigate } from "gatsby"
@@ -12,6 +12,13 @@ import TagList from "components/TagList"
 import PostList from "components/PostList"
 import VerticleSpace from "components/VerticalSpace"
 
+const TagListWrapper = styled.div`
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+`
 const TagsPage = ({ data }) => {
   const tags = _.sortBy(data.allMarkdownRemark.group, ["totalCount"]).reverse()
   const posts = data.allMarkdownRemark.nodes

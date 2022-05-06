@@ -1,5 +1,5 @@
 import React from "react"
-import { TagListWrapper } from "./zbirke.styled"
+import styled from "styled-components"
 import { flow, map, groupBy, sortBy, filter, reverse } from "lodash/fp"
 import { graphql } from "gatsby"
 import { title as siteTitle, description, siteUrl } from "../../blog-config"
@@ -9,6 +9,14 @@ import Title from "components/Title"
 import SeriesList from "components/SeriesList"
 import VerticleSpace from "components/VerticalSpace"
 import NoContent from "components/NoContent"
+
+const TagListWrapper = styled.div`
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+`
 
 const SeriesPage = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes

@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react"
-import { SearchWrapper } from "./pretraga.styled"
+import styled from "styled-components"
 import SEO from "components/SEO"
 import { graphql } from "gatsby"
 import { title as siteTitle, description, siteUrl } from "../../blog-config"
@@ -8,6 +8,13 @@ import PostList from "components/PostList"
 import TextField from "components/TextField"
 import Title from "components/Title"
 import VerticalSpace from "components/VerticalSpace"
+
+const SearchWrapper = styled.div`
+  margin-top: 20px;
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+`
 
 const Search = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes

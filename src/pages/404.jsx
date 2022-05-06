@@ -1,13 +1,11 @@
 import React from "react"
-// import { NotFound } from "./404.styled"
+import styled from "styled-components"
 import { Link } from "gatsby"
 import { title as siteTitle, description, siteUrl } from "../../blog-config"
 import Layout from "components/Layout"
 import SEO from "components/SEO"
 
-import styled from "styled-components"
-
-export const NotFound = styled.div`
+const NotFound = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
