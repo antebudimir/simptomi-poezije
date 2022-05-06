@@ -26,6 +26,7 @@ export const NotFound = styled.div`
       color: ${props => props.theme.colors.primaryColor};
     }
   }
+
   & .link:hover,
   & a:focus .link {
     display: inline-block;
