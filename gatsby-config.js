@@ -26,16 +26,6 @@ module.exports = {
         windowKey: "__PRELOADED_STATE__",
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `noto sans kr:300,400,500,700,900`,
-          `source code pro:700`, // you can also specify font weights and styles
-        ],
-        display: "swap",
-      },
-    },
     "gatsby-plugin-styled-components",
     "gatsby-remark-reading-time",
     `gatsby-plugin-react-helmet`,
@@ -48,8 +38,8 @@ module.exports = {
         short_name: title,
         description: description,
         start_url: `/`,
-        background_color: `#ffffff`, // PROMIJENITI KAD TEMA BUDE ODABRANA
-        theme_color: `#ced4da`, // PROMIJENITI KAD TEMA BUDE ODABRANA
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
         display: `standalone`,
         icon: `static/favicon.png`,
       },
@@ -171,7 +161,7 @@ module.exports = {
               }
             `,
             output: `/rss.xml`,
-            title: `RSS Feed of ${title}`,
+            title: `RSS feed bloga ${title}`,
             match: "^/blog/",
           },
         ],

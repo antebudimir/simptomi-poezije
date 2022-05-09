@@ -11,7 +11,6 @@ import {
 } from "./index.styled"
 import { navigate } from "gatsby"
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"
-// import Bio from "components/Bio"
 import Divider from "components/Divider"
 import Comment from "../Comment"
 
@@ -56,9 +55,6 @@ const Footer = ({ previous, next }) => {
           </ArticleButton>
         )}
       </ArticleButtonContainer>
-
-      {/* Do I need bio/introduction here again???? */}
-      {/* <Bio /> */}
 
       <CommentWrapper>
         <Divider mt="32px" />

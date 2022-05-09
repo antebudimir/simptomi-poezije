@@ -81,6 +81,24 @@ const GlobalStyles = createGlobalStyle`
  button {
   padding-block: 0;
  }
+
+  html,
+  body {
+	scrollbar-color: ${props => props.theme.colors.secondaryColor} ${props =>
+  props.theme.colors.quaternaryColor};
+}
+
+  body::-webkit-scrollbar {
+    height: 12px;
+}
+
+  body::-webkit-scrollbar-track {
+    background: ${props => props.theme.colors.quaternaryColor};
+}
+
+  body::-webkit-scrollbar-thumb {
+    background: ${props => props.theme.colors.secondaryColor};
+}
 `
 
 export default GlobalStyles

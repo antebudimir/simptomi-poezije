@@ -121,18 +121,6 @@ const StyledMarkdown = styled.div`
     margin-top: 8px;
   }
 
-  /* NE RADIIIIIIIIIIIIIIIII */
-  /* ::-webkit-scrollbar {
-    height: 12px;
-  }
-  ::-webkit-scrollbar-track {
-    background: ${props => props.theme.colors.secondaryColor};
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: ${props => props.theme.colors.secondaryColor};
-  } */
-
   & pre > code {
     font-size: 14.4px;
   }

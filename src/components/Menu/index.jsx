@@ -35,7 +35,10 @@ const Menu = ({ toggleTheme }) => {
       </Link>
 
       {isSmall && <MobileLabel>RSS Feed</MobileLabel>}
-      <Link to="/rss.xml" title="Pretplati se na RSS feed">
+      <Link
+        to="/rss.xml"
+        title="Kopiraj ovaj RSS feed i otvori ga u svom omiljenom čitaču kao što je Feedly"
+      >
         <FaRss />
       </Link>
 
