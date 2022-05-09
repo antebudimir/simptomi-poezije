@@ -1,26 +1,44 @@
 import styled from "styled-components"
 
 export const StyledMenu = styled.nav`
-  /* display: none; */
-
-  /* display: flex; */ /* align-items: center; */
-  /* padding: 0 0 0 18rem; */
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  background: ${props => props.theme.colors.primaryColorTransparent};
 
   @media (min-width: 481px) {
-    display: flex;
+    position: initial;
+    flex-flow: row nowrap;
     align-items: center;
-    padding: 0 0 0 18rem;
   }
 
-  @media (max-width: 680px) {
-    padding: 0;
+  @media (min-width: 681px) {
+    padding: 0 0 0 16.5rem;
   }
 
   & svg {
     width: 2rem;
     height: 2rem;
-    margin-right: 1.5rem;
+    padding: 0 0 0 1.5rem;
     cursor: pointer;
+  }
+
+  & a {
+    margin-bottom: 2rem;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+
+      @media (min-width: 481px) {
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width: 481px) {
+      margin-bottom: 0;
+    }
   }
 
   & svg path {
@@ -37,23 +55,40 @@ export const StyledMenu = styled.nav`
 `
 export const ThemeToggler = styled.button`
   position: relative;
+  margin: 2rem 0 3rem;
 
-  /* only the children svg's */
+  @media screen and (min-width: 481px) {
+    margin: 0;
+  }
+
   & > svg {
     position: absolute;
     top: -1rem;
-    left: -3.3rem;
+    left: 0rem;
+    margin-bottom: 10rem;
     transition: opacity 300ms;
+  }
+
+  @media screen and (min-width: 481px) {
+    & > svg {
+      position: absolute;
+      left: -3.3rem;
+      margin-bottom: 0;
+    }
   }
 
   & > svg:first-child {
     opacity: ${props => (props.theme === "light" ? 0 : 1)};
-    display: ${props => (props.theme === "light" ? 0 : 1)};
   }
 
   & > svg:last-child {
     opacity: ${props => (props.theme === "dark" ? 0 : 1)};
-    display: ${props => (props.theme === "dark" ? 0 : 1)};
     width: 1.8rem;
   }
+`
+
+export const MobileLabel = styled.span`
+  color: ${props => props.theme.colors.secondaryColor};
+  font-size: 0.8rem;
+  text-align: center;
 `

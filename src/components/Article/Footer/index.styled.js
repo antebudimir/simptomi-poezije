@@ -6,7 +6,6 @@ export const ArticleButtonContainer = styled.div`
   margin: 48px 0;
 
   @media (max-width: 768px) {
-    margin-bottom: 80px;
     padding: 0 12.8px;
     flex-direction: column;
 

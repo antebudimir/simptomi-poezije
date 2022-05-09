@@ -1,6 +1,7 @@
-import styled, { useTheme } from "styled-components"
+import styled from "styled-components"
 
 export const HeaderWrapper = styled.header`
+  position: relative;
   z-index: 999;
   box-shadow: ${props => props.theme.colors.primaryShadow};
   position: sticky;
@@ -15,20 +16,24 @@ export const HeaderWrapper = styled.header`
   transition: top ${props => props.theme.timing.secondaryTiming},
     opacity ${props => props.theme.timing.secondaryTiming};
 
+  & .hamburger-react {
+    color: ${props => props.theme.colors.secondaryColor};
+  }
+
   & a:focus img {
     transform: scale(1.1);
     transition: transform ${props => props.theme.timing.primaryTiming};
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: 681px) {
     justify-content: space-between;
   }
 `
 export const Logo = styled.img`
-  width: 12rem;
+  width: 10rem;
   height: auto;
 
-  @media (max-width: 680px) {
-    width: 10rem;
+  @media (min-width: 768px) {
+    width: 12rem;
   }
 `

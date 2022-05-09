@@ -58,7 +58,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
   body {
-  background: ${props => props.theme.colors.primaryColor};
+    background: ${props => props.theme.colors.primaryColor};
 }
 
   h1 {
@@ -76,6 +76,10 @@ const GlobalStyles = createGlobalStyle`
 
  a {
       text-decoration: none;
+ }
+
+ button {
+  padding-block: 0;
  }
 `
 
