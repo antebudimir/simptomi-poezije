@@ -27,6 +27,28 @@ export const PostWrapper = styled.div`
   } */
 `
 
+export const PostTitle = styled.h2`
+  margin-bottom: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: ${props => props.theme.colors.secondaryColor};
+
+  & > a {
+    color: inherit;
+    transition: color 0.2s;
+  }
+
+  &:hover,
+  & a:focus {
+    color: ${props => props.theme.colors.quinaryColor};
+  }
+
+  @media screen and (min-width: 600px) {
+    font-size: 2rem;
+  }
+`
+
 export const Date = styled.p`
   margin-bottom: 16px;
   color: ${props => props.theme.colors.tertiaryColor};
@@ -35,6 +57,10 @@ export const Date = styled.p`
 export const Excerpt = styled.p`
   margin-bottom: 32px;
   line-height: 1.4;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: ${props => props.theme.colors.secondaryColor};
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.2rem;
+  }
 `

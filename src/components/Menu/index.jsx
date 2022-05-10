@@ -1,5 +1,10 @@
 import React from "react"
-import { StyledMenu, ThemeToggler, MobileLabel } from "./index.styled"
+import {
+  StyledMenu,
+  ThemeToggler,
+  MobileLabel,
+  MobileSubscribe,
+} from "./index.styled"
 import { useTheme } from "styled-components"
 import { Link } from "gatsby"
 import useMediaQueries from "hooks/useMediaQueries"
@@ -11,11 +16,16 @@ import {
   FaRss,
   FaSearch,
   FaListUl,
+  FaMailBulk,
 } from "react-icons/fa"
 
 const Menu = ({ toggleTheme }) => {
   const theme = useTheme(),
     { isSmall } = useMediaQueries()
+
+  const handleSubscribe = () => {
+    console.log("subscribe modal opened")
+  }
 
   return (
     <StyledMenu>
@@ -34,7 +44,7 @@ const Menu = ({ toggleTheme }) => {
         <FaListUl />
       </Link>
 
-      {isSmall && <MobileLabel>RSS Feed</MobileLabel>}
+      {isSmall && <MobileLabel>RSS</MobileLabel>}
       <Link
         to="/rss.xml"
         title="Kopiraj ovaj RSS feed i otvori ga u svom omiljenom čitaču kao što je Feedly"
@@ -42,7 +52,16 @@ const Menu = ({ toggleTheme }) => {
         <FaRss />
       </Link>
 
-      {isSmall && <MobileLabel>Pretraga</MobileLabel>}
+      {isSmall && <MobileLabel>Prati</MobileLabel>}
+      {isSmall && (
+        <MobileSubscribe
+          title="Pretplati se na mjesečne obavijesti o novim postovima"
+          onClick={handleSubscribe}
+        >
+          <FaMailBulk />
+        </MobileSubscribe>
+      )}
+
       <Link to="/pretraga" title="Pretraži blog">
         <FaSearch />
       </Link>

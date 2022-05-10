@@ -1,5 +1,11 @@
 import React, { useState, useEffect, Fragment } from "react"
-import { Excerpt, PostListWrapper, PostWrapper, Date } from "./index.styled"
+import {
+  Excerpt,
+  PostListWrapper,
+  PostTitle,
+  PostWrapper,
+  Date,
+} from "./index.styled"
 import _ from "lodash"
 import { Link } from "gatsby"
 import Title from "components/Title"
@@ -45,11 +51,11 @@ const PostList = ({ postList }) => {
         return (
           <Fragment key={i}>
             <PostWrapper tabIndex="0">
-              <Title size="bg">
+              <PostTitle>
                 <Link to={slug} title={`Otvori post "${title}"`}>
                   {title}
                 </Link>
-              </Title>
+              </PostTitle>
 
               <Date>{date}</Date>
 

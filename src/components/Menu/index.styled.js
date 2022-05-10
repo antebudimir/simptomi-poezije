@@ -25,7 +25,8 @@ export const StyledMenu = styled.nav`
     cursor: pointer;
   }
 
-  & a {
+  & a,
+  & button {
     margin-bottom: 2rem;
 
     &:not(:last-child) {
@@ -90,5 +91,10 @@ export const ThemeToggler = styled.button`
 export const MobileLabel = styled.span`
   color: ${props => props.theme.colors.secondaryColor};
   font-size: 0.8rem;
+  text-align: center;
+`
+
+export const MobileSubscribe = styled.button`
+  background-color: transparent;
   text-align: center;
 `

@@ -61,27 +61,6 @@ const GlobalStyles = createGlobalStyle`
     background: ${props => props.theme.colors.primaryColor};
 }
 
-  h1 {
-    font-family: 'DehutiBook';
-    font-family: 'SabonRoman';
-    font-family: 'PalatinoLinotypeRoman';
-    font-family: 'AGaramondProRegular';  
-}
-
-  p {
-    font-family: 'Gill Sans MT Pro Book';
-    font-family: 'AGaramondProRegular';
-    font-family: 'PalatinoLinotypeRoman';
-}
-
- a {
-      text-decoration: none;
- }
-
- button {
-  padding-block: 0;
- }
-
   html,
   body {
 	scrollbar-color: ${props => props.theme.colors.secondaryColor} ${props =>
@@ -99,6 +78,28 @@ const GlobalStyles = createGlobalStyle`
   body::-webkit-scrollbar-thumb {
     background: ${props => props.theme.colors.secondaryColor};
 }
+
+  h1,
+  h2 {
+    font-family: 'SabonRoman';
+    font-family: 'PalatinoLinotypeRoman';
+    font-family: 'AGaramondProRegular';  
+    /* font-family: 'DehutiBook'; */
+}
+
+  p {
+    font-family: 'Gill Sans MT Pro Book';
+    font-family: 'AGaramondProRegular';
+    font-family: 'PalatinoLinotypeRoman';
+}
+
+ a {
+    text-decoration: none;
+ }
+
+ button {
+  padding-block: 0;
+ }
 `
 
 export default GlobalStyles

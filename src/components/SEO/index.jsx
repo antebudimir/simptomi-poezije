@@ -4,7 +4,7 @@ import { siteUrl } from "../../../blog-config"
 
 const SEO = ({ title, description, url }) => {
   return (
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: "hr" }}>
       <title>{title}</title>
 
       <meta property="og:url" content={url} />

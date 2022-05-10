@@ -28,16 +28,24 @@ export const BioWrapper = styled.div`
 
 export const Author = styled.div`
   margin-bottom: 4.8px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: ${props => props.theme.colors.secondaryColor};
+
+  @media screen and (min-width: 600px) {
+    font-size: 2rem;
+  }
 `
 
 export const Description = styled.div`
   margin: 2rem 0;
   line-height: 1.5;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: ${props => props.theme.colors.secondaryColor};
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.2rem;
+  }
 `
 
 export const LinksWrapper = styled.div`
