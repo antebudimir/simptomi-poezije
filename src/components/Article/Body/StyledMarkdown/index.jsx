@@ -2,9 +2,10 @@ import styled from "styled-components"
 
 const StyledMarkdown = styled.div`
   & {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    /* font-size: 1rem; // if Merriweather */
     color: ${props => props.theme.colors.secondaryColor};
-    line-height: 1.5;
+    line-height: 1.6;
     overflow: hidden;
 
     @media screen and (min-width: 600px) {
@@ -44,33 +45,21 @@ const StyledMarkdown = styled.div`
   & h5,
   & h6 {
     margin: 11.2px 0 4.8px 0;
-    font-weight: 700;
   }
 
   & h2 {
     margin-top: 64px;
     margin-bottom: 24px;
-    font-size: 28px;
   }
 
   & h3 {
     margin-top: 48px;
     margin-bottom: 24px;
-    font-size: 22.4px;
   }
 
   & h4 {
     margin-top: 32px;
     margin-bottom: 24px;
-    font-size: 17.6px;
-  }
-
-  & h5 {
-    font-size: 16px;
-  }
-
-  & h6 {
-    font-size: 14.4px;
   }
 
   & strong {

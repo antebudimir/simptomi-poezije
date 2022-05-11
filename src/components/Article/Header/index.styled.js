@@ -10,10 +10,14 @@ export const Wrapper = styled.div`
 
 export const ArticleTitle = styled.h1`
   margin-bottom: 25.6px;
-  line-height: 1.2;
-  font-size: 44.8px;
-  font-weight: 700;
   color: ${props => props.theme.colors.secondaryColor};
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @media (min-width: 600px) {
+    font-size: 2.5rem;
+  }
 `
 
 export const Information = styled.div`

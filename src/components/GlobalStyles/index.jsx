@@ -5,6 +5,7 @@ import GillSansMTProBook from "fonts/GillSansMTPro-Book.woff"
 import PalatinoLinotypeRoman from "fonts/PalatinoLinotype-Roman.woff"
 // import FolioBook from "fonts/FolioBT-Book.woff"
 import FolioBook from "fonts/Folio-Bold.woff"
+import MerriweatherRegular from "fonts/Merriweather-Regular.woff"
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
@@ -29,6 +30,14 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'FolioBook';
     src: url(${FolioBook}) format('woff');
     font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Merriweather Regular';
+    src: url(${MerriweatherRegular}) format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -69,6 +78,7 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     font-family: 'PalatinoLinotypeRoman';
+    /* font-family: 'Merriweather Regular'; */
 }
 
  a {
