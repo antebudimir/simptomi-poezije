@@ -15,9 +15,10 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.div`
-  margin-bottom: 25px;
-  font-weight: bold;
   color: ${props => props.theme.colors.secondaryColor};
+  margin-bottom: 25px;
+  font-family: "Gill Sans MT Pro Bold";
+  text-align: center;
 `
 
 export const Tag = styled.li`
@@ -25,6 +26,8 @@ export const Tag = styled.li`
   color: ${props => props.theme.colors.secondaryColor};
   cursor: pointer;
   transition: color ${props => props.theme.timing.primaryTiming};
+  font-family: "PalatinoLinotypeRoman";
+  text-align: center;
 
   &:hover,
   & a:focus {

@@ -10,7 +10,6 @@ export const Title = styled.h1`
   margin-bottom: 15px;
   line-height: 1.2;
   font-size: 44.8px;
-  font-weight: bold;
   color: ${props => props.theme.colors.secondaryColor};
 `
 
@@ -20,7 +19,6 @@ export const Subtitle = styled.h3`
   margin-top: 32px;
   margin-bottom: 8px;
   font-size: 20px;
-  font-weight: bold;
   background-color: ${props => props.theme.colors.secondaryColor};
   color: ${props => props.theme.colors.primaryColor};
   letter-spacing: -1px;
@@ -39,5 +37,4 @@ export const SeriesInform = styled.div`
 
 export const Date = styled.span`
   color: ${props => props.theme.colors.tertiaryColor};
-  font-weight: lighter;
 `

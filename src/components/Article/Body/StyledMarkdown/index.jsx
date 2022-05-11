@@ -3,7 +3,6 @@ import styled from "styled-components"
 const StyledMarkdown = styled.div`
   & {
     font-size: 1.1rem;
-    font-size: 1rem; // if Merriweather
     color: ${props => props.theme.colors.secondaryColor};
     line-height: 1.6;
     overflow: hidden;

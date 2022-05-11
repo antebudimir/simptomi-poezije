@@ -1,11 +1,12 @@
 import React from "react"
 import {
+  BackLink,
   StyledEmailShareButton,
   StyledFacebookShareButton,
   StyledTelegramShareButton,
   StyledWhatsappShareButton,
 } from "./Post.styled"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { title as siteTitle, siteUrl } from "../../blog-config"
 import SEO from "components/SEO"
 import Layout from "components/Layout"
@@ -53,9 +54,9 @@ const Post = ({ data }) => {
         url={`${siteUrl}${slug}`}
       />
 
-      <Link to="/" title="Vrati se na listu postova">
+      <BackLink to="/" title="Vrati se na listu postova">
         <FaArrowLeft /> Natrag na listu postova
-      </Link>
+      </BackLink>
 
       <Article>
         <Article.Header

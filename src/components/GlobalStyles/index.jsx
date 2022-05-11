@@ -1,18 +1,23 @@
 import { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"
-
-import GillSansMTProBook from "fonts/GillSansMTPro-Book.woff"
+import GillSansMTProBold from "fonts/GillSansMTPro-Bold.woff"
+import GillSansMTProMedium from "fonts/GillSansMTPro-Medium.woff"
 import PalatinoLinotypeRoman from "fonts/PalatinoLinotype-Roman.woff"
-// import FolioBook from "fonts/FolioBT-Book.woff"
-import FolioBook from "fonts/Folio-Bold.woff"
-import MerriweatherRegular from "fonts/Merriweather-Regular.woff"
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
 
 @font-face {
-    font-family: 'Gill Sans MT Pro Book';
-    src: url(${GillSansMTProBook}) format('woff');
+    font-family: 'Gill Sans MT Pro Bold';
+    src: url(${GillSansMTProBold}) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gill Sans MT Pro Medium';
+    src: url(${GillSansMTProMedium}) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -26,22 +31,6 @@ const GlobalStyles = createGlobalStyle`
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'FolioBook';
-    src: url(${FolioBook}) format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Merriweather Regular';
-    src: url(${MerriweatherRegular}) format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
   * {
     outline: none;
     border: none;
@@ -50,6 +39,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: ${props => props.theme.colors.primaryColor};
+    font-family: 'Gill Sans MT Pro Medium';
 }
 
   html,
@@ -72,13 +62,11 @@ const GlobalStyles = createGlobalStyle`
 
   h1,
   h2 {
-    font-family: 'FolioBook';
-    /* font-family: 'Gill Sans MT Pro Book'; */
+    font-family: 'Gill Sans MT Pro Bold';
 }
 
   p {
     font-family: 'PalatinoLinotypeRoman';
-    font-family: 'Merriweather Regular';
 }
 
  a {

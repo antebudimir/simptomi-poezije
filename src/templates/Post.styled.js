@@ -1,10 +1,15 @@
 import styled from "styled-components"
+import { Link } from "gatsby"
 import {
   EmailShareButton,
   FacebookShareButton,
   TelegramShareButton,
   WhatsappShareButton,
 } from "react-share"
+
+export const BackLink = styled(Link)`
+  font-family: "Gill Sans MT Pro Bold";
+`
 
 export const StyledEmailShareButton = styled(EmailShareButton)`
   &:hover,

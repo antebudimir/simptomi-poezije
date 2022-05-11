@@ -11,6 +11,10 @@ export const FooterWrapper = styled.footer`
   font-size: 1rem;
   text-align: center;
 
+  @media screen and (min-width: 600px) {
+    font-size: 1.25rem;
+  }
+
   & a:focus img {
     transform: scale(1.1);
     transition: transform ${props => props.theme.timing.primaryTiming};

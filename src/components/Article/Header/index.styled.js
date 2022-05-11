@@ -15,7 +15,7 @@ export const ArticleTitle = styled.h1`
   font-weight: 700;
   line-height: 1.2;
 
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     font-size: 2.5rem;
   }
 `
@@ -26,11 +26,19 @@ export const Information = styled.div`
 `
 
 export const Author = styled.span`
-  font-weight: 700;
   color: ${props => props.theme.colors.secondaryColor};
+  font-size: 1rem;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.1rem;
+  }
 `
 
 export const Date = styled.span`
-  font-weight: 300;
   color: ${props => props.theme.colors.secondaryColor};
+  font-size: 1rem;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.1rem;
+  }
 `

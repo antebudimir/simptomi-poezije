@@ -8,7 +8,6 @@ import {
 } from "./index.styled"
 import _ from "lodash"
 import { Link } from "gatsby"
-import Title from "components/Title"
 import Divider from "components/Divider"
 import TagList from "components/TagList"
 

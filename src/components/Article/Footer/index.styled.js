@@ -90,13 +90,18 @@ export const ArticleButtonLabel = styled.div`
 
 export const ArticleButtonTitle = styled.div`
   width: 100%;
-  font-size: 1.5rem;
+  font-family: "Gill Sans MT Pro Bold";
+  font-size: 1.3rem;
   text-overflow: ellipsis;
   overflow: hidden;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.5rem;
+  }
 `
 
 export const CommentWrapper = styled.div`
-  @media (max-width: 680px) {
+  @media screen and (max-width: 680px) {
     padding: 0 12.8px;
   }
 `

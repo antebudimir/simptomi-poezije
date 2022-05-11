@@ -5,7 +5,7 @@ export const BioWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     padding: 0 15px;
   }
 `
@@ -28,7 +28,7 @@ export const BioWrapper = styled.div`
 
 export const Author = styled.div`
   margin-bottom: 4.8px;
-  font-family: "Helvetica";
+  font-family: "Gill Sans MT Pro Bold";
   font-size: 1.5rem;
   font-weight: 700;
   color: ${props => props.theme.colors.secondaryColor};
@@ -40,12 +40,13 @@ export const Author = styled.div`
 
 export const Description = styled.div`
   margin: 2rem 0;
-  line-height: 1.5;
-  font-size: 1.1rem;
   color: ${props => props.theme.colors.secondaryColor};
+  font-family: "PalatinoLinotypeRoman";
+  font-size: 1.1rem;
+  line-height: 1.6;
 
   @media screen and (min-width: 600px) {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 `
 
