@@ -17,8 +17,11 @@ import {
   TelegramIcon,
   WhatsappIcon,
 } from "react-share"
+import useMediaQueries from "hooks/useMediaQueries"
+import Subscribe from "components/Subscribe"
 
 const Post = ({ data }) => {
+  const { isSmall } = useMediaQueries()
   const post = data.markdownRemark
   const { previous, next, seriesList } = data
   const { title, date, update, tags, series } = post.frontmatter
@@ -97,6 +100,8 @@ const Post = ({ data }) => {
 
         <Article.Footer previous={previous} next={next} />
       </Article>
+
+      {isSmall && <Subscribe />}
     </Layout>
   )
 }

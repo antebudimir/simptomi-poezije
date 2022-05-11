@@ -56,11 +56,11 @@ export const Date = styled.p`
 
 export const Excerpt = styled.p`
   margin-bottom: 32px;
-  line-height: 1.4;
-  font-size: 1.1rem;
+  line-height: 1.5;
+  font-size: 1rem;
   color: ${props => props.theme.colors.secondaryColor};
 
   @media screen and (min-width: 600px) {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 `

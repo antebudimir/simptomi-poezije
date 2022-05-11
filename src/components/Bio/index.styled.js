@@ -28,6 +28,7 @@ export const BioWrapper = styled.div`
 
 export const Author = styled.div`
   margin-bottom: 4.8px;
+  font-family: "Helvetica";
   font-size: 1.5rem;
   font-weight: 700;
   color: ${props => props.theme.colors.secondaryColor};

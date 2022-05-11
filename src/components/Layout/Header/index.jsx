@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react"
+import { HeaderWrapper, Logo } from "./index.styled"
 import { useTheme } from "styled-components"
 import { Link } from "gatsby"
 import useMediaQueries from "hooks/useMediaQueries"
@@ -8,9 +9,6 @@ import logo from "assets/images/logo 7.png"
 import logoHovered from "assets/images/logo 7-hovered.png"
 import logoNight from "assets/images/logo-night.png"
 import logoNightHovered from "assets/images/logo-night-hovered.png"
-
-import Modal from "react-modal"
-import { HeaderWrapper, Logo } from "./index.styled"
 
 const Header = ({ toggleTheme }) => {
   const theme = useTheme()
@@ -53,23 +51,6 @@ const Header = ({ toggleTheme }) => {
     imageRef.current.src = theme.name === "light" ? logo : logoNight
   }
 
-  // SORT THIS SHIT!!!!!!!!!!!!!!!!!
-  let subtitle
-  const [modalIsOpen, setIsOpen] = React.useState(false)
-
-  // function openModal() {
-  //   setIsOpen(true)
-  // }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00"
-  }
-
-  // function closeModal() {
-  //   setIsOpen(false)
-  // }
-
   return (
     <HeaderWrapper isHidden={hidden}>
       <Link to="/" title="Povratak na naslovnu">
@@ -91,40 +72,8 @@ const Header = ({ toggleTheme }) => {
       ) : (
         <Menu toggleTheme={toggleTheme} />
       )}
-
-      {/* <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <h2>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
-      </Modal> */}
     </HeaderWrapper>
   )
-}
-
-const customStyles = {
-  content: {
-    zIndex: "10000",
-    position: "relative",
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-  },
 }
 
 export default Header

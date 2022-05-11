@@ -46,10 +46,12 @@ Sjediš u Birtiji cijelu noć, kosa se vijori po separeu.
 Ljudi dolaze, ljudi odlaze, mjesta se izmjenjuju.  
 Naravno da je netko, a tko drugi nego ja!,  
 sjeo na tvoje mjesto u jednom trenutku,  
-a jedna vražja vlas tvoje duge plave kose mi je skočila na kičmu.
+a jedna vražja vlas tvoje duge plave kose  
+skočila mi je na kičmu.
 
-Sljedeći dan mi je žena skočila na kičmu.  
-A ti si se sjetila svih jadnih, izmučenih, osim mene bijednoga  
+Sljedeći dan žena mi je skočila na kičmu.  
+A ti si se sjetila svih jadnih, izmučenih,  
+osim mene bijednoga  
 koji sam narednih nekoliko noći spavao na kauču.
 
 Da ti kosu...

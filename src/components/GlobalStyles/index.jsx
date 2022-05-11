@@ -1,22 +1,13 @@
 import { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"
 
-import AGaramondProRegular from "fonts/AGaramondPro-Regular.woff"
 import GillSansMTProBook from "fonts/GillSansMTPro-Book.woff"
 import PalatinoLinotypeRoman from "fonts/PalatinoLinotype-Roman.woff"
-import SabonRoman from "fonts/SabonRoman.woff"
-import DehutiBook from "fonts/Dehuti-Book.woff"
+// import FolioBook from "fonts/FolioBT-Book.woff"
+import FolioBook from "fonts/Folio-Bold.woff"
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
-
-@font-face {
-	font-family: 'AGaramondProRegular';
-	src: url(${AGaramondProRegular}) format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
 
 @font-face {
     font-family: 'Gill Sans MT Pro Book';
@@ -35,17 +26,8 @@ const GlobalStyles = createGlobalStyle`
 }
 
 @font-face {
-    font-family: 'SabonRoman';
-    src: url(${SabonRoman}) format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* maybe h1? */
-@font-face {
-    font-family: 'DehutiBook';
-    src: url(${DehutiBook}) format('woff');
+    font-family: 'FolioBook';
+    src: url(${FolioBook}) format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -81,15 +63,11 @@ const GlobalStyles = createGlobalStyle`
 
   h1,
   h2 {
-    font-family: 'SabonRoman';
-    font-family: 'PalatinoLinotypeRoman';
-    font-family: 'AGaramondProRegular';  
-    /* font-family: 'DehutiBook'; */
+    font-family: 'FolioBook';
+    /* font-family: 'Gill Sans MT Pro Book'; */
 }
 
   p {
-    font-family: 'Gill Sans MT Pro Book';
-    font-family: 'AGaramondProRegular';
     font-family: 'PalatinoLinotypeRoman';
 }
 

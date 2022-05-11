@@ -26,7 +26,7 @@ export const StyledMenu = styled.nav`
   }
 
   & a,
-  & button {
+  & button:not(:first-of-type) {
     margin-bottom: 2rem;
 
     &:not(:last-child) {
@@ -66,7 +66,6 @@ export const ThemeToggler = styled.button`
     position: absolute;
     top: -1rem;
     left: 0rem;
-    margin-bottom: 10rem;
     transition: opacity 300ms;
   }
 
@@ -74,7 +73,6 @@ export const ThemeToggler = styled.button`
     & > svg {
       position: absolute;
       left: -3.3rem;
-      margin-bottom: 0;
     }
   }
 

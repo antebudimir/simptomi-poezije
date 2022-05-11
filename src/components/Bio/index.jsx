@@ -1,7 +1,13 @@
 import React from "react"
-import { BioWrapper, Author, Description, LinksWrapper } from "./index.styled"
+import {
+  BioWrapper,
+  Author,
+  Description,
+  LinksWrapper,
+  // Profile,
+} from "./index.styled"
 import { FaFacebook, FaLinkedin, FaEnvelope } from "react-icons/fa"
-import { siteUrl, description, author, links } from "../../../blog-config"
+import { description, author, links } from "../../../blog-config"
 
 const Link = ({ link, children }) => {
   if (!link) return null

@@ -3,12 +3,11 @@ import {
   StyledMenu,
   ThemeToggler,
   MobileLabel,
-  MobileSubscribe,
+  // MobileSubscribe,
 } from "./index.styled"
 import { useTheme } from "styled-components"
 import { Link } from "gatsby"
 import useMediaQueries from "hooks/useMediaQueries"
-
 import {
   FaSun,
   FaMoon,
@@ -16,16 +15,12 @@ import {
   FaRss,
   FaSearch,
   FaListUl,
-  FaMailBulk,
+  // FaMailBulk,
 } from "react-icons/fa"
 
 const Menu = ({ toggleTheme }) => {
   const theme = useTheme(),
     { isSmall } = useMediaQueries()
-
-  const handleSubscribe = () => {
-    console.log("subscribe modal opened")
-  }
 
   return (
     <StyledMenu>
@@ -44,26 +39,27 @@ const Menu = ({ toggleTheme }) => {
         <FaListUl />
       </Link>
 
+      {isSmall && <MobileLabel>Pretraga</MobileLabel>}
+      <Link to="/pretraga" title="Pretraži blog">
+        <FaSearch />
+      </Link>
+
+      {/* {isSmall && <MobileLabel>Prati</MobileLabel>}
+      {isSmall && (
+        <MobileSubscribe
+          title="Pretplati se na mjesečne obavijesti o novim postovima"
+          onClick={openModal}
+        >
+          <FaMailBulk />
+        </MobileSubscribe>
+      )} */}
+
       {isSmall && <MobileLabel>RSS</MobileLabel>}
       <Link
         to="/rss.xml"
         title="Kopiraj ovaj RSS feed i otvori ga u svom omiljenom čitaču kao što je Feedly"
       >
         <FaRss />
-      </Link>
-
-      {isSmall && <MobileLabel>Prati</MobileLabel>}
-      {isSmall && (
-        <MobileSubscribe
-          title="Pretplati se na mjesečne obavijesti o novim postovima"
-          onClick={handleSubscribe}
-        >
-          <FaMailBulk />
-        </MobileSubscribe>
-      )}
-
-      <Link to="/pretraga" title="Pretraži blog">
-        <FaSearch />
       </Link>
     </StyledMenu>
   )

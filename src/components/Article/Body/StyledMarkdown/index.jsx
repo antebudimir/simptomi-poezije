@@ -2,10 +2,14 @@ import styled from "styled-components"
 
 const StyledMarkdown = styled.div`
   & {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: ${props => props.theme.colors.secondaryColor};
     line-height: 1.5;
     overflow: hidden;
+
+    @media screen and (min-width: 600px) {
+      font-size: 1.25rem;
+    }
   }
 
   & *:first-child {
