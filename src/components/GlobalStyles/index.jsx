@@ -78,7 +78,7 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     font-family: 'PalatinoLinotypeRoman';
-    /* font-family: 'Merriweather Regular'; */
+    font-family: 'Merriweather Regular';
 }
 
  a {
