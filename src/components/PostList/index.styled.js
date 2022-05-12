@@ -12,7 +12,7 @@ export const PostWrapper = styled.div`
   box-shadow: ${props => props.theme.colors.secondaryShadow};
   position: relative;
   top: 0;
-  padding: 1rem;
+  padding: 0 1rem 1rem;
   transition: all 300ms;
 
   &:hover,
@@ -22,19 +22,17 @@ export const PostWrapper = styled.div`
     border-bottom: 1px solid ${props => props.theme.colors.secondaryColor};
     border-left: 1px solid ${props => props.theme.colors.secondaryColor};
   }
-
-  /* @media (max-width: 768px) {
-  } */
 `
 
 export const PostTitle = styled.h2`
-  margin-bottom: 1.3rem;
+  color: ${props => props.theme.colors.secondaryColor};
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
-  color: ${props => props.theme.colors.secondaryColor};
 
   & > a {
+    display: block;
+    padding: 1.3rem 0;
     color: inherit;
     transition: color 0.2s;
   }
@@ -56,9 +54,9 @@ export const Date = styled.p`
 
 export const Excerpt = styled.p`
   margin-bottom: 32px;
-  line-height: 1.6;
-  font-size: 1.1rem;
   color: ${props => props.theme.colors.secondaryColor};
+  font-size: 1.1rem;
+  line-height: 1.6;
 
   @media screen and (min-width: 600px) {
     font-size: 1.25rem;

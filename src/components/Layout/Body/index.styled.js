@@ -11,7 +11,7 @@ export const BodyWrapper = styled.div`
     align-items: center;
     width: fit-content;
     margin: 3rem 0 0;
-    padding: 1rem;
+    padding: 1.1rem 1rem 1rem;
     background-color: ${props => props.theme.colors.quaternaryColor};
     color: ${props => props.theme.colors.secondaryColor};
     text-decoration: none;

@@ -44,7 +44,7 @@ export const ArticleButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: ${props => (props.right ? "flex-end" : "flex-start")};
-  padding: 20.8px 16px;
+  padding: 1.5rem 1.3rem 1.3rem;
   max-width: 250px;
   flex-basis: 250px;
   font-size: 17.6px;
