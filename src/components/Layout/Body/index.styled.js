@@ -31,5 +31,9 @@ export const BodyWrapper = styled.div`
 
   & svg {
     margin: 0 1rem 0 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 0 1rem;
+    }
   }
 `
