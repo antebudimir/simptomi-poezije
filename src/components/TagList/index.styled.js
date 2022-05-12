@@ -5,7 +5,7 @@ export const StyledLink = styled(GatsbyLink)`
   border-radius: ${props => props.theme.spacing.primaryRadius};
   display: inline-block;
   margin: 0 8px 8px 0;
-  padding: 9.6px 11.2px;
+  padding: 0.7rem 0.7rem 0.6rem;
   background-color: ${props =>
     props.selected
       ? props.theme.colors.secondaryColor
@@ -22,5 +22,9 @@ export const StyledLink = styled(GatsbyLink)`
   &:focus {
     background-color: ${props => props.theme.colors.secondaryColor};
     color: ${props => props.theme.colors.primaryColor};
+  }
+
+  @media screen and (min-width: 600px) {
+    padding: 0.6rem 0.7rem;
   }
 `

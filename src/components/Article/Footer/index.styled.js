@@ -76,9 +76,10 @@ export const ArticleButtonWrapper = styled.div`
     left: ${props => (props.right ? 2 : -2)}px;
   }
 
-  @media (max-width: 768px) {
-    max-width: inherit;
+  @media screen and (max-width: 768px) {
     flex-basis: inherit;
+    max-width: inherit;
+    padding: 1.7rem 1.3rem 1.3rem;
   }
 `
 
