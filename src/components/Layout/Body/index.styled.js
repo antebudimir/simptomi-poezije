@@ -8,7 +8,8 @@ export const BodyWrapper = styled.div`
   & > a {
     border-radius: ${props => props.theme.spacing.primaryRadius};
     display: flex;
-    align-items: center;
+    /* display: block; */
+    /* align-items: center; */
     width: fit-content;
     margin: 3rem 0 0;
     padding: 1.1rem 1rem 1rem;

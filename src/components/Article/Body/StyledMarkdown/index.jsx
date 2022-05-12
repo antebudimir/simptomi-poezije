@@ -72,11 +72,15 @@ const StyledMarkdown = styled.div`
   & blockquote {
     border-radius: ${props => props.theme.spacing.primaryRadius};
     width: fit-content;
-    padding: 18px 24px;
+    padding: 1.3rem 1.5rem 1.1rem;
     background-color: ${props => props.theme.colors.quaternaryColor};
 
     & *:last-child {
       margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 600px) {
+      padding: 1.1rem 1.5rem;
     }
   }
 

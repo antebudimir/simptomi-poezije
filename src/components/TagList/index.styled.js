@@ -5,7 +5,7 @@ export const StyledLink = styled(GatsbyLink)`
   border-radius: ${props => props.theme.spacing.primaryRadius};
   display: inline-block;
   margin: 0 8px 8px 0;
-  padding: 0.7rem 0.7rem 0.6rem;
+  padding: 0.8rem 0.7rem 0.6rem;
   background-color: ${props =>
     props.selected
       ? props.theme.colors.secondaryColor
