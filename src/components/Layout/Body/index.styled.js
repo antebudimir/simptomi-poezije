@@ -23,7 +23,7 @@ export const BodyWrapper = styled.div`
       color: ${props => props.theme.colors.primaryColor};
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       margin: 3rem 0 0;
       padding: 1.1rem 1rem 1rem;
     }
@@ -31,9 +31,9 @@ export const BodyWrapper = styled.div`
 
   & svg {
     margin: 0 1rem 0.3rem 0;
-  }
 
-  @media screen and (min-width: 768px) {
-    margin: 0 1rem 0 0;
+    @media screen and (min-width: 1024px) {
+      margin: 0 1rem 0 0;
+    }
   }
 `

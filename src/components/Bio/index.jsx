@@ -24,6 +24,7 @@ const Bio = () => {
   return (
     <BioWrapper id="bio">
       {/* <Profile /> */}
+
       <div>
         <Author>{author}</Author>
 

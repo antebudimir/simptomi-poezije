@@ -24,7 +24,7 @@ export const StyledLink = styled(GatsbyLink)`
     color: ${props => props.theme.colors.primaryColor};
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1024px) {
     padding: 0.6rem 0.7rem;
   }
 `
