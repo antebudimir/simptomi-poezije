@@ -9,7 +9,7 @@ tags:
 series: "Rezovi"
 ---
 
-<p style='font-size: 1.5rem; font-style: italic; text-align: right;'>We’ll always have Paris.<br>Rick Blaine</p>
+<p style='font-size: 1rem; font-style: italic; text-align: right;'>We’ll always have Paris.<br>Rick Blaine</p>
 
 Šetali smo ulicama, ruke su nam bile sretne  
 isprepleteni prsti pleli su dane ljetne

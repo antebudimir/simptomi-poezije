@@ -9,7 +9,7 @@ tags:
 series: "Rezovi"
 ---
 
-<p style='font-size: 1.5rem; font-style: italic; text-align: right;'>S tvoje kose mirise bih  
+<p style='font-size: 1rem; font-style: italic; text-align: right;'>S tvoje kose mirise bih  
 nosio po sv’jetu.<br>Musa Ćazim Ćatić</p>
 
 Čime te mogu privući, ljepoto:  

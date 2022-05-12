@@ -9,7 +9,7 @@ tags:
 series: "Rezovi"
 ---
 
-<p style='font-size: 1.5rem; font-style: italic; text-align: right;'>Je me souviendrai de toi comme
+<p style='font-size: 1rem; font-style: italic; text-align: right;'>Je me souviendrai de toi comme
 de l’oubli de l’amour même.<br>Marguerite Duras</p>
 
 Malo po malo –  

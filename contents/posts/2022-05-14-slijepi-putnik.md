@@ -1,8 +1,8 @@
 ---
 title: "Slijepi putnik"
 description: "Ponekad se zbog nje nađem u nekim neugodnim situacijama..."
-date: 2022-04-02
-update: 2022-04-02
+date: 2022-05-14
+update: 2022-05-14
 tags:
   - poezija
   - neudomljeno
@@ -44,12 +44,12 @@ Da vjetar, da perce - koji treš! Što bulazniš kad je priča jasna?
 
 Sjediš u Birtiji cijelu noć, kosa se vijori po separeu.  
 Ljudi dolaze, ljudi odlaze, mjesta se izmjenjuju.  
-Naravno da je netko, a tko drugi nego ja!,  
+Naravno da je netko, a tko drugi nego ja!  
 sjeo na tvoje mjesto u jednom trenutku,  
 a jedna vražja vlas tvoje duge plave kose  
 skočila mi je na kičmu.
 
-Sljedeći dan žena mi je skočila na kičmu.  
+Sljedeći dan na kičmu mi je skočila žena.  
 A ti si se sjetila svih jadnih, izmučenih,  
 osim mene bijednoga  
 koji sam narednih nekoliko noći spavao na kauču.
