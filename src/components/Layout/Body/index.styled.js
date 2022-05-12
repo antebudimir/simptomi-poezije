@@ -10,8 +10,9 @@ export const BodyWrapper = styled.div`
     display: flex;
     align-items: center;
     width: fit-content;
-    /* margin: 3rem 0 0;
-    padding: 1.1rem 1rem 1rem; */
+    margin: 3rem 0 0 15px;
+    padding: 1.3rem 1rem 1rem;
+
     background-color: ${props => props.theme.colors.quaternaryColor};
     color: ${props => props.theme.colors.secondaryColor};
     text-decoration: none;
@@ -22,13 +23,17 @@ export const BodyWrapper = styled.div`
       color: ${props => props.theme.colors.primaryColor};
     }
 
-    /* @media screen and (max-width: 768px) {
-      margin: 3rem 0 0 15px;
-      padding: 1.3rem 1rem 1rem;
-    } */
+    @media screen and (min-width: 768px) {
+      margin: 3rem 0 0;
+      padding: 1.1rem 1rem 1rem;
+    }
   }
 
   & svg {
+    margin: 0 1rem 0.3rem 0;
+  }
+
+  @media screen and (min-width: 768px) {
     margin: 0 1rem 0 0;
   }
 `
