@@ -1,7 +1,6 @@
 import React from "react"
 import {
   BackLink,
-  BackLinkText,
   StyledEmailShareButton,
   StyledFacebookShareButton,
   StyledTelegramShareButton,
@@ -56,7 +55,7 @@ const Post = ({ data }) => {
       />
 
       <BackLink to="/" title="Vrati se na listu postova">
-        <FaArrowLeft /> <BackLinkText>Natrag na listu postova</BackLinkText>
+        <FaArrowLeft /> Natrag na listu postova
       </BackLink>
 
       <Article>
