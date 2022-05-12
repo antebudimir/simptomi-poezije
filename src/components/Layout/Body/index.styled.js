@@ -33,7 +33,7 @@ export const BodyWrapper = styled.div`
     margin: 0 1rem 0 0;
 
     @media screen and (max-width: 768px) {
-      padding: 0 0 1rem;
+      margin: 0 0 1rem;
     }
   }
 `
