@@ -8,8 +8,7 @@ export const BodyWrapper = styled.div`
   & > a {
     border-radius: ${props => props.theme.spacing.primaryRadius};
     display: flex;
-    /* display: block; */
-    /* align-items: center; */
+    align-items: center;
     width: fit-content;
     margin: 3rem 0 0;
     padding: 1.1rem 1rem 1rem;
@@ -31,9 +30,5 @@ export const BodyWrapper = styled.div`
 
   & svg {
     margin: 0 1rem 0 0;
-
-    @media screen and (max-width: 768px) {
-      margin: 0 0 1rem;
-    }
   }
 `

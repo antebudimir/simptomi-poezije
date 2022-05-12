@@ -11,6 +11,8 @@ export const BackLink = styled(Link)`
   font-family: "Gill Sans MT Pro Bold";
 `
 
+export const BackLinkText = styled.div``
+
 export const StyledEmailShareButton = styled(EmailShareButton)`
   &:hover,
   &:focus {
