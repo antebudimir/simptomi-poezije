@@ -10,7 +10,7 @@ export const BodyWrapper = styled.div`
     display: flex;
     align-items: center;
     width: fit-content;
-    margin: 3rem 0 0 15px;
+    margin: 1.8rem 0 0 15px;
     padding: 1.3rem 1rem 1rem;
 
     background-color: ${props => props.theme.colors.quaternaryColor};
