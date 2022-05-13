@@ -16,7 +16,6 @@ export const light = {
       "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
     secondaryShadow:
       "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
-    tertiaryShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px",
   },
 }
 
@@ -34,12 +33,8 @@ export const dark = {
     // quaternaryColor: "rgb(53, 76, 104)", // indigo lighter
     quinaryColor: "rgb(200, 200, 30)", // yellow
     senaryColor: "rgb(134, 142, 150)", // grey
-    primaryShadow:
-      "rgb(60, 84, 109) 0px 4px 6px, rgb(60, 84, 109) 0px 3px 3px, rgb(60, 84, 109) 0px 2px 2px",
-    // primaryShadow:
-    //   "rgb(134, 142, 150) 0px 4px 6px, rgb(134, 142, 150) 0px 3px 3px, rgb(134, 142, 150) 0px 2px 2px",
+    primaryShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px",
     secondaryShadow:
       "rgb(134, 142, 150) 0px -2px 5px, rgb(134, 142, 150) 0px 3px 3px, rgb(134, 142, 150) 0px 2px 5px",
-    tertiaryShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px",
   },
 }
