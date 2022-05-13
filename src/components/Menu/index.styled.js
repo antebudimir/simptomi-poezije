@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledMenu = styled.nav`
   box-shadow: ${props => props.theme.colors.primaryShadow};
   position: absolute;
-  top: 5rem;
+  top: 5.16rem;
   right: 0;
   display: flex;
   flex-flow: column nowrap;
@@ -14,6 +14,7 @@ export const StyledMenu = styled.nav`
     position: initial;
     flex-flow: row nowrap;
     align-items: center;
+    background: none;
   }
 
   @media (min-width: 681px) {

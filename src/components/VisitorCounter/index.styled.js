@@ -1,18 +1,19 @@
 import styled from "styled-components"
 
-export const SubscribeWrapper = styled.div`
+export const VisitorWrapper = styled.div`
   border-radius: ${props => props.theme.spacing.primaryRadius};
   box-shadow: ${props => props.theme.colors.secondaryShadow};
   max-width: 100%;
   margin: 0 1rem;
-  margin: 15rem 1rem 0;
-  display: block;
   padding: 1rem;
   background-color: ${props => props.theme.colors.quaternaryColor};
+  font-family: "PalatinoLinotypeRoman";
+  color: ${props => props.theme.colors.secondaryColor};
   font-size: 1.1rem;
+  line-height: 1.5;
 
   @media (min-width: 1300px) {
     width: 18.75rem;
-    margin: 4rem 0 0;
+    margin: 0.7rem 0 0;
   }
 `

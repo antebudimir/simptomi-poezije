@@ -4,14 +4,13 @@ export const Wrapper = styled.div`
   border-radius: ${props => props.theme.spacing.primaryRadius};
   box-shadow: ${props => props.theme.colors.secondaryShadow};
   width: 18.75rem;
-  margin-bottom: 5rem;
   padding: 1rem;
   background-color: ${props => props.theme.colors.quaternaryColor};
   font-size: 1.1rem;
 
-  /* @media (max-width: 1300px) {
-  display: none;
-} */
+  @media (max-width: 1300px) {
+    display: none;
+  }
 `
 
 export const Title = styled.div`
