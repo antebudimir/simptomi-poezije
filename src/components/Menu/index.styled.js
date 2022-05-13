@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledMenu = styled.nav`
   box-shadow: ${props => props.theme.colors.primaryShadow};
   position: absolute;
-  top: 5.16rem;
+  top: 5.218rem;
   right: 0;
   display: flex;
   flex-flow: column nowrap;
