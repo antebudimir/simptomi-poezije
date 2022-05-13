@@ -3,6 +3,7 @@ export const light = {
   colors: {
     primaryColor: "rgb(255, 255, 255)", // white
     primaryColorTransparent: "rgba(255, 255, 255, 0.9)", // white T
+    menuBackground: "rgb(238, 238, 238)", // white tailored to match the header shadow
     primaryColorFullTransparent: "rgba(255, 255, 255, 0)", // white TFull
     secondaryColor: "rgb(44, 62, 80)", // indigo
     secondaryColorTransparent: "rgba(44, 62, 80, 0.8)", // indigo T
@@ -24,6 +25,7 @@ export const dark = {
   colors: {
     primaryColor: "rgb(44, 62, 80)", // indigo
     primaryColorTransparent: "rgba(44, 62, 80, 0.8)", // indigo T
+    menuBackground: "rgb(44, 62, 80)", // indigo
     primaryColorFullTransparent: "rgba(44, 62, 80, 0)", // indigo TFull
     secondaryColor: "rgb(255, 255, 255)", // white
     secondaryColorTransparent: "rgba(255, 255, 255, 0.9)", // white T

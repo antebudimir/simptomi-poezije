@@ -7,7 +7,7 @@ export const StyledMenu = styled.nav`
   right: 0;
   display: flex;
   flex-flow: column nowrap;
-  background: ${props => props.theme.colors.primaryColorTransparent};
+  background: ${props => props.theme.colors.menuBackground};
 
   @media (min-width: 481px) {
     box-shadow: none;
