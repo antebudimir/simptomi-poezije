@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const ArticleButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 48px 0;
+  margin: 40px 0 48px;
 
   @media (max-width: 768px) {
     padding: 0 12.8px;

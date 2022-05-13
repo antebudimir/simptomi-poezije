@@ -16,11 +16,7 @@ export const light = {
       "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
     secondaryShadow:
       "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
-    // postListShadow:
-    //   "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
-    // "rgba(50, 50, 93, 0.25) 0px 10px 20px 5px, rgba(0, 0, 0, 0.3) 0px 18px 26px 0px",
-    // postListShadow:
-    //   "rgb(44, 62, 80) 3px 3px 10px, rgba(0, 0, 0, 0.1) 10px 10px 6px",
+    tertiaryShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px",
   },
 }
 
@@ -39,15 +35,11 @@ export const dark = {
     quinaryColor: "rgb(200, 200, 30)", // yellow
     senaryColor: "rgb(134, 142, 150)", // grey
     primaryShadow:
-      "rgb(134, 142, 150) 0px 4px 6px, rgb(134, 142, 150) 0px 3px 3px, rgb(134, 142, 150) 0px 2px 2px",
+      "rgb(60, 84, 109) 0px 4px 6px, rgb(60, 84, 109) 0px 3px 3px, rgb(60, 84, 109) 0px 2px 2px",
+    // primaryShadow:
+    //   "rgb(134, 142, 150) 0px 4px 6px, rgb(134, 142, 150) 0px 3px 3px, rgb(134, 142, 150) 0px 2px 2px",
     secondaryShadow:
       "rgb(134, 142, 150) 0px -2px 5px, rgb(134, 142, 150) 0px 3px 3px, rgb(134, 142, 150) 0px 2px 5px",
-    // postListShadow:
-    //   "rgb(255, 255, 255) 0px 4px 6px, rgb(255, 255, 255) 0px 3px 3px, rgb(255, 255, 255) 0px 2px 2px",
-    // "rgb(202, 202, 56) 0px 4px 6px, rgb(202, 202, 56) 0px 3px 3px, rgb(255, 255, 255) 0px 2px 2px",
-    // "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
-    // "rgba(50, 50, 93, 0.25) 0px 10px 20px 5px, rgba(0, 0, 0, 0.3) 0px 18px 26px 0px",
-    // postListShadow:
-    //   "rgb(44, 62, 80) 3px 3px 10px, rgba(0, 0, 0, 0.1) 10px 10px 6px",
+    tertiaryShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px",
   },
 }

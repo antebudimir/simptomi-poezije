@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const StyledMenu = styled.nav`
+  box-shadow: ${props => props.theme.colors.tertiaryShadow};
   position: absolute;
   top: 5rem;
   right: 0;

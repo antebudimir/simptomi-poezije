@@ -67,6 +67,7 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     font-family: 'PalatinoLinotypeRoman';
+    letter-spacing: -0.5px;
 }
 
  a {

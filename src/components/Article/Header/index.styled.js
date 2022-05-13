@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  margin-top: 32px;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
 
   @media (max-width: 768px) {
     padding: 0 15px;
