@@ -5,7 +5,7 @@ date: 2016-10-25
 update: 2016-10-25
 tags:
   - poezija
-  - neudomljeno
+  - iz-književne-ostavštine
 ---
 
 Svakoga dana u isto doba u dnevnik zapišem:  

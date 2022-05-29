@@ -1,11 +1,11 @@
 ---
-title: "Slijepi putnik"
+title: "Noćna straža"
 description: "Ponekad se zbog nje nađem u nekim neugodnim situacijama..."
-date: 2022-05-14
-update: 2022-05-14
+date: 2022-05-29
+update: 2022-05-29
 tags:
   - poezija
-  - neudomljeno
+  - iz-književne-ostavštine
 ---
 
 Ponekad se zbog nje nađem u nekim neugodnim situacijama.  

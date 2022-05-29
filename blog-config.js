@@ -1,7 +1,7 @@
 module.exports = {
   title: "Simptomi poezije",
   description:
-    "Simptomi poezije osobni su blog Ante Budimira na kojem objavljuje pjesme i kratke priče, te razmišljanja o ulozi pisane riječi u svakidašnjem životu.",
+    "Simptomi poezije moj su osobni blog na kojem povremeno objavljujem pjesme i (uskoro) kratke priče. Uslijed poduže objavljivačke neaktivnosti, nakupilo se jako puno materijala. Zasad mi je cilj objavljivati jedan novi uradak mjesečno.",
   author: "Ante Budimir",
   siteUrl: "https://simptomipoezije.com",
   links: {

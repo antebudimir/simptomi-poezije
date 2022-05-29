@@ -5,7 +5,7 @@ date: 2016-03-21
 update: 2016-03-21
 tags:
   - poezija
-  - neudomljeno
+  - iz-književne-ostavštine
 ---
 
 Nikada je više nisam pronašao onakvu, istu.  
