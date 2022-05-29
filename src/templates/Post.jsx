@@ -20,6 +20,7 @@ import {
 } from "react-share"
 import useMediaQueries from "hooks/useMediaQueries"
 import Subscribe from "components/Subscribe"
+import metaImage from "assets/images/og-image.jpg"
 
 const Post = ({ data }) => {
   const { isSmall } = useMediaQueries()
@@ -52,6 +53,7 @@ const Post = ({ data }) => {
         title={`${title} | ${siteTitle}`}
         description={excerpt}
         url={`${siteUrl}${slug}`}
+        image={metaImage}
       />
 
       <BackLink to="/" title="Vrati se na listu postova">
