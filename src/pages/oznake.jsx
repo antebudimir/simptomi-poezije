@@ -11,6 +11,7 @@ import Title from "components/Title"
 import TagList from "components/TagList"
 import PostList from "components/PostList"
 import VerticleSpace from "components/VerticalSpace"
+import metaImage from "assets/images/og-image.jpg"
 
 const TagListWrapper = styled.div`
   margin-top: 20px;
@@ -63,7 +64,7 @@ const TagsPage = ({ data }) => {
         title={`${siteTitle} | Oznake`}
         description={description}
         url={siteUrl}
-        image={`${siteUrl}/static/og-image.jpg`}
+        image={metaImage}
       />
 
       <TagListWrapper>

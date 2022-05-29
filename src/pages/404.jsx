@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { title as siteTitle, description, siteUrl } from "../../blog-config"
 import Layout from "components/Layout"
 import SEO from "components/SEO"
+import metaImage from "assets/images/og-image.jpg"
 
 const NotFound = styled.div`
   display: flex;
@@ -50,7 +51,7 @@ const NotFoundPage = () => (
       title={`Greška 404 | ${siteTitle}`}
       description={description}
       url={siteUrl}
-      image={`${siteUrl}/static/og-image.jpg`}
+      image={metaImage}
     />
     <NotFound>
       <h2>Greška 404</h2>

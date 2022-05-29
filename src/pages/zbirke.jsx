@@ -9,6 +9,7 @@ import Title from "components/Title"
 import SeriesList from "components/SeriesList"
 import VerticleSpace from "components/VerticalSpace"
 import NoContent from "components/NoContent"
+import metaImage from "assets/images/og-image.jpg"
 
 const TagListWrapper = styled.div`
   margin-top: 20px;
@@ -49,7 +50,7 @@ const SeriesPage = ({ data }) => {
         title={`Zbirke | ${siteTitle}`}
         description={description}
         url={siteUrl}
-        image={`${siteUrl}/static/og-image.jpg`}
+        image={metaImage}
       />
 
       <TagListWrapper>

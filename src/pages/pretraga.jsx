@@ -8,6 +8,7 @@ import PostList from "components/PostList"
 import TextField from "components/TextField"
 import Title from "components/Title"
 import VerticalSpace from "components/VerticalSpace"
+import metaImage from "assets/images/og-image.jpg"
 
 const SearchWrapper = styled.div`
   margin-top: 20px;
@@ -50,7 +51,7 @@ const Search = ({ data }) => {
         title={`Pretraga | ${siteTitle}`}
         description={description}
         url={siteUrl}
-        image={`${siteUrl}/static/og-image.jpg`}
+        image={metaImage}
       />
 
       <SearchWrapper>
