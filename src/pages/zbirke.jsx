@@ -49,6 +49,7 @@ const SeriesPage = ({ data }) => {
         title={`Zbirke | ${siteTitle}`}
         description={description}
         url={siteUrl}
+        image={`${siteUrl}/static/og-image.jpg`}
       />
 
       <TagListWrapper>

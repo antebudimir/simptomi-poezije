@@ -50,6 +50,7 @@ const Search = ({ data }) => {
         title={`Pretraga | ${siteTitle}`}
         description={description}
         url={siteUrl}
+        image={`${siteUrl}/static/og-image.jpg`}
       />
 
       <SearchWrapper>

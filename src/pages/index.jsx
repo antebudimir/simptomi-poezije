@@ -29,7 +29,7 @@ const BlogIndex = ({ data }) => {
         title={`${siteTitle} | ${author}`}
         description={description}
         url={siteUrl}
-        image={`${siteUrl}/src/assets/og-image.png`}
+        image={`${siteUrl}/static/og-image.jpg`}
       />
 
       <VerticalSpace size={48} />

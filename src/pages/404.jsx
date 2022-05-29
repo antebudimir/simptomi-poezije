@@ -50,6 +50,7 @@ const NotFoundPage = () => (
       title={`Greška 404 | ${siteTitle}`}
       description={description}
       url={siteUrl}
+      image={`${siteUrl}/static/og-image.jpg`}
     />
     <NotFound>
       <h2>Greška 404</h2>
