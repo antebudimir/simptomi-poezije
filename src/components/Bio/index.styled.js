@@ -46,7 +46,7 @@ export const Description = styled.div`
   line-height: 1.6;
 
   @media screen and (min-width: 600px) {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
 `
 

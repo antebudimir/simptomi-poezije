@@ -8,7 +8,7 @@ const StyledMarkdown = styled.div`
     overflow: hidden;
 
     @media screen and (min-width: 600px) {
-      font-size: 1.25rem;
+      font-size: 1.3rem;
     }
   }
 
