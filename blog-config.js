@@ -5,10 +5,8 @@ module.exports = {
   author: "Ante Budimir",
   siteUrl: "https://simptomipoezije.com",
   links: {
-    github: "https://github.com/antebudimir",
     linkedIn: "https://www.linkedin.com/in/ante-budimir",
     facebook: "https://web.facebook.com/ante.budimir.14",
-    instagram: "https://www.instagram.com",
     email: "mailto:inbox@antebudimir.com",
   },
 }
