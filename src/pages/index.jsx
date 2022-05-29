@@ -29,7 +29,8 @@ const BlogIndex = ({ data }) => {
         title={`${siteTitle} | ${author}`}
         description={description}
         url={siteUrl}
-        image={`${siteUrl}/static/og-image.jpg`}
+        image="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/NIIAAOSwjmFfmfGk/$_3.JPG"
+        // image={`${siteUrl}/static/og-image.jpg`}
       />
 
       <VerticalSpace size={48} />
