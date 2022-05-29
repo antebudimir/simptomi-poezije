@@ -14,6 +14,7 @@ import PostList from "components/PostList"
 import Sidebar from "components/Sidebar"
 import Divider from "components/Divider"
 import VerticalSpace from "components/VerticalSpace"
+import metaImage from "assets/images/og-image.jpg"
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -29,8 +30,7 @@ const BlogIndex = ({ data }) => {
         title={`${siteTitle} | ${author}`}
         description={description}
         url={siteUrl}
-        image="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/NIIAAOSwjmFfmfGk/$_3.JPG"
-        // image={`${siteUrl}/static/og-image.jpg`}
+        image={metaImage}
       />
 
       <VerticalSpace size={48} />

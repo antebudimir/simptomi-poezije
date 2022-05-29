@@ -5,7 +5,7 @@ export const SubscribeWrapper = styled.div`
   box-shadow: ${props => props.theme.colors.secondaryShadow};
   max-width: 100%;
   margin: 0 1rem;
-  margin: 15rem 1rem 0;
+  margin: 0 1rem;
   display: block;
   padding: 1rem;
   background-color: ${props => props.theme.colors.quaternaryColor};

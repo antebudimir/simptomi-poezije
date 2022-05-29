@@ -1,10 +1,5 @@
 import React from "react"
-import {
-  StyledMenu,
-  ThemeToggler,
-  MobileLabel,
-  // MobileSubscribe,
-} from "./index.styled"
+import { StyledMenu, ThemeToggler, MobileLabel } from "./index.styled"
 import { useTheme } from "styled-components"
 import { Link } from "gatsby"
 import useMediaQueries from "hooks/useMediaQueries"
@@ -15,7 +10,6 @@ import {
   FaRss,
   FaSearch,
   FaListUl,
-  // FaMailBulk,
 } from "react-icons/fa"
 
 const Menu = ({ toggleTheme }) => {
@@ -43,16 +37,6 @@ const Menu = ({ toggleTheme }) => {
       <Link to="/pretraga" title="Pretraži blog">
         <FaSearch />
       </Link>
-
-      {/* {isSmall && <MobileLabel>Prati</MobileLabel>}
-      {isSmall && (
-        <MobileSubscribe
-          title="Pretplati se na mjesečne obavijesti o novim postovima"
-          onClick={openModal}
-        >
-          <FaMailBulk />
-        </MobileSubscribe>
-      )} */}
 
       {isSmall && <MobileLabel>RSS</MobileLabel>}
       <Link
