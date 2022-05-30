@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1rem 0.7rem;
   background-color: ${props => props.theme.colors.primaryColorTransparent};
   backdrop-filter: blur(5px);
   opacity: ${props => (props.isHidden ? 0 : 1)};
