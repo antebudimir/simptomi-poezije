@@ -4,7 +4,7 @@ import { VisitorWrapper } from "./index.styled"
 const VisitorCounter = () => {
   return (
     <VisitorWrapper>
-      3,278 pacijenata prošlo je kroz ovu ambulantu.
+      4,020 pacijenata prošlo je kroz ovu ambulantu.
     </VisitorWrapper>
   )
 }
