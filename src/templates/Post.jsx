@@ -20,7 +20,7 @@ import {
 } from "react-share"
 import useMediaQueries from "hooks/useMediaQueries"
 import Subscribe from "components/Subscribe"
-import metaImage from "assets/images/og-image.jpg"
+import defaultMetaImage from "assets/images/og-image.jpg"
 
 const Post = ({ data }) => {
   const { isSmall } = useMediaQueries()
@@ -47,18 +47,34 @@ const Post = ({ data }) => {
     })
   }
 
+  // for metaImages
+  const diacriticlessTitle = title
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .replace("đ", "dj")
+    .replace(" ", "-")
+
+  const imageBase = "assets/images/"
+
   return (
     <Layout>
       <SEO
         title={`${title} | ${siteTitle}`}
         description={excerpt}
         url={`${siteUrl}${slug}`}
-        image={metaImage}
+        image={
+          `${imageBase}${diacriticlessTitle}.jpg`
+            ? `${imageBase}${diacriticlessTitle}.jpg`
+            : defaultMetaImage
+        }
       />
 
       <BackLink to="/" title="Vrati se na listu postova">
         <FaArrowLeft /> Natrag na listu postova
       </BackLink>
+
+      <img src={diacriticlessTitle} alt="" />
 
       <Article>
         <Article.Header
@@ -68,7 +84,6 @@ const Post = ({ data }) => {
           tags={tags}
           minToRead={Math.ceil(readingTime.minutes)}
         />
-
         <Article.Body html={post.html} />
         {filteredSeries.length > 0 && (
           <Article.Series header={series} series={filteredSeries} />
@@ -81,26 +96,22 @@ const Post = ({ data }) => {
           url={`${siteUrl}${slug}`}
           title={`Podijeli "${title}" putem email-a`}
         />
-
         <StyledFacebookShareButton
           children={<FacebookIcon size={48} borderRadius="5" />}
           url={`${siteUrl}${slug}`}
           quote={`Bacite oko na post "${title}" sa bloga "Simptomi poezije". Mogao bi vam se svidjeti. 🙂`}
           title={`Podijeli "${title}" na Facebook-u`}
         />
-
         <StyledTelegramShareButton
           children={<TelegramIcon size={48} borderRadius="5" />}
           url={`${siteUrl}${slug}`}
           title={`Baci oko na ovaj post. Mogao bi ti se svidjeti. 🙂`}
         />
-
         <StyledWhatsappShareButton
           children={<WhatsappIcon size={48} borderRadius="5" />}
           url={`${siteUrl}${slug}`}
           title={`Baci oko na ovaj post. Mogao bi ti se svidjeti. 🙂`}
         />
-
         <Article.Footer previous={previous} next={next} />
       </Article>
 
