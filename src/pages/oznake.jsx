@@ -10,8 +10,8 @@ import Layout from "components/Layout"
 import Title from "components/Title"
 import TagList from "components/TagList"
 import PostList from "components/PostList"
-import VerticleSpace from "components/VerticalSpace"
-import metaImage from "assets/images/og-image.jpg"
+import VerticalSpace from "components/VerticalSpace"
+import metaImage from "static/og-image.jpg"
 
 const TagListWrapper = styled.div`
   margin-top: 20px;
@@ -93,7 +93,7 @@ const TagsPage = ({ data }) => {
         />
       </TagListWrapper>
 
-      <VerticleSpace size={32} />
+      <VerticalSpace size={32} />
 
       <PostList postList={filteredPosts} />
     </Layout>

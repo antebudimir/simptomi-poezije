@@ -7,9 +7,9 @@ import SEO from "components/SEO"
 import Layout from "components/Layout"
 import Title from "components/Title"
 import SeriesList from "components/SeriesList"
-import VerticleSpace from "components/VerticalSpace"
+import VerticalSpace from "components/VerticalSpace"
 import NoContent from "components/NoContent"
-import metaImage from "assets/images/og-image.jpg"
+import metaImage from "static/og-image.jpg"
 
 const TagListWrapper = styled.div`
   margin-top: 20px;
@@ -63,7 +63,7 @@ const SeriesPage = ({ data }) => {
 
       {series.length === 0 && <NoContent name="zbirke" />}
 
-      <VerticleSpace size={32} />
+      <VerticalSpace size={32} />
 
       <SeriesList seriesList={series} />
     </Layout>

@@ -8,7 +8,7 @@ import PostList from "components/PostList"
 import TextField from "components/TextField"
 import Title from "components/Title"
 import VerticalSpace from "components/VerticalSpace"
-import metaImage from "assets/images/og-image.jpg"
+import metaImage from "static/og-image.jpg"
 
 const SearchWrapper = styled.div`
   margin-top: 20px;

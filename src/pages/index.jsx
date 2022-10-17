@@ -14,7 +14,7 @@ import PostList from "components/PostList"
 import Sidebar from "components/Sidebar"
 import Divider from "components/Divider"
 import VerticalSpace from "components/VerticalSpace"
-import metaImage from "assets/images/og-image.jpg"
+import metaImage from "static/og-image.jpg"
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes

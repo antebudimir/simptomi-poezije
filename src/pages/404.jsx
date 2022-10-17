@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { title as siteTitle, description, siteUrl } from "../../blog-config"
 import Layout from "components/Layout"
 import SEO from "components/SEO"
-import metaImage from "assets/images/og-image.jpg"
+import metaImage from "static/og-image.jpg"
 
 const NotFound = styled.div`
   display: flex;
