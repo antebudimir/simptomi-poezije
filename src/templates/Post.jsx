@@ -20,7 +20,7 @@ import {
 } from "react-share"
 import useMediaQueries from "hooks/useMediaQueries"
 import Subscribe from "components/Subscribe"
-import defaultMetaImage from "assets/images/og-image.jpg"
+import defaultMetaImage from "static/og-image.jpg"
 
 const Post = ({ data }) => {
   const { isSmall } = useMediaQueries()
@@ -55,7 +55,6 @@ const Post = ({ data }) => {
     .replace("đ", "dj")
     .replace(" ", "-")
 
-  // const imageBase = "assets/images/"
   const imageBase = "static/"
 
   return (
