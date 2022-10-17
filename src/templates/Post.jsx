@@ -55,7 +55,8 @@ const Post = ({ data }) => {
     .replace("đ", "dj")
     .replace(" ", "-")
 
-  const imageBase = "assets/images/"
+  // const imageBase = "assets/images/"
+  const imageBase = "static/"
 
   return (
     <Layout>
