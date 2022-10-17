@@ -14,7 +14,6 @@ import PostList from "components/PostList"
 import Sidebar from "components/Sidebar"
 import Divider from "components/Divider"
 import VerticalSpace from "components/VerticalSpace"
-import metaImage from "static/og-image.jpg"
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -30,7 +29,7 @@ const BlogIndex = ({ data }) => {
         title={`${siteTitle} | ${author}`}
         description={description}
         url={siteUrl}
-        image={metaImage}
+        image={`${siteUrl}/og-image.jpg`}
       />
 
       <VerticalSpace size={48} />

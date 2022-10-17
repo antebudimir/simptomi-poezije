@@ -20,7 +20,6 @@ import {
 } from "react-share"
 import useMediaQueries from "hooks/useMediaQueries"
 import Subscribe from "components/Subscribe"
-import defaultMetaImage from "static/og-image.jpg"
 
 const Post = ({ data }) => {
   const { isSmall } = useMediaQueries()
@@ -55,7 +54,7 @@ const Post = ({ data }) => {
     .replace("đ", "dj")
     .replace(" ", "-")
 
-  const imageBase = "static/"
+  const defaultMetaImage = `${siteUrl}/og-image.jpg`
 
   return (
     <Layout>
@@ -64,8 +63,8 @@ const Post = ({ data }) => {
         description={excerpt}
         url={`${siteUrl}${slug}`}
         image={
-          `${imageBase}${diacriticlessTitle}.jpg`
-            ? `${imageBase}${diacriticlessTitle}.jpg`
+          `${siteUrl}${diacriticlessTitle}.jpg`
+            ? `${siteUrl}${diacriticlessTitle}.jpg`
             : defaultMetaImage
         }
       />
