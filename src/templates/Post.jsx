@@ -54,7 +54,7 @@ const Post = ({ data }) => {
     .replace("đ", "dj")
     .replace(" ", "-")
 
-  const defaultMetaImage = `${siteUrl}/og-image.jpg`
+  const defaultMetaImage = `${siteUrl}/static/og-image.jpg`
 
   return (
     <Layout>
@@ -63,8 +63,8 @@ const Post = ({ data }) => {
         description={excerpt}
         url={`${siteUrl}${slug}`}
         image={
-          `${siteUrl}${diacriticlessTitle}.jpg`
-            ? `${siteUrl}${diacriticlessTitle}.jpg`
+          `${siteUrl}/static/${diacriticlessTitle}.jpg`
+            ? `${siteUrl}/static/${diacriticlessTitle}.jpg`
             : defaultMetaImage
         }
       />
