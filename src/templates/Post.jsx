@@ -54,21 +54,17 @@ const Post = ({ data }) => {
     .replace("đ", "dj")
     .replace(" ", "-")
 
-  // const defaultMetaImage = require`${siteUrl}/src/assets/images/og-image.jpg`
-  // require(`/src/assets/images/${diacriticlessTitle}.jpg`)
-
   return (
     <Layout>
       <SEO
         title={`${title} | ${siteTitle}`}
         description={excerpt}
         url={`${siteUrl}${slug}`}
-        image={`${siteUrl}/${diacriticlessTitle}.jpg`}
-        // image={
-        //   require(`/src/assets/images/${diacriticlessTitle}.jpg`)
-        //     ? require(`/src/assets/images/${diacriticlessTitle}.jpg`)
-        //     : "defaultMetaImage"
-        // }
+        image={
+          `${siteUrl}/${diacriticlessTitle}.jpg`
+            ? `${siteUrl}/${diacriticlessTitle}.jpg`
+            : `${siteUrl}/og-image.jpg`
+        }
       />
 
       <BackLink to="/" title="Vrati se na listu postova">
