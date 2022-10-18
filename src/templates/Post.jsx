@@ -54,7 +54,8 @@ const Post = ({ data }) => {
     .replace("đ", "dj")
     .replace(" ", "-")
 
-  const defaultMetaImage = `${siteUrl}/static/og-image.jpg`
+  // const defaultMetaImage = require`${siteUrl}/src/assets/images/og-image.jpg`
+  // require(`/src/assets/images/${diacriticlessTitle}.jpg`)
 
   return (
     <Layout>
@@ -62,10 +63,11 @@ const Post = ({ data }) => {
         title={`${title} | ${siteTitle}`}
         description={excerpt}
         url={`${siteUrl}${slug}`}
+        // image={`${diacriticlessTitle}.jpg`}
         image={
-          `${siteUrl}/static/${diacriticlessTitle}.jpg`
-            ? `${siteUrl}/static/${diacriticlessTitle}.jpg`
-            : defaultMetaImage
+          require(`/src/assets/images/${diacriticlessTitle}.jpg`)
+            ? require(`/src/assets/images/${diacriticlessTitle}.jpg`)
+            : "defaultMetaImage"
         }
       />
 
