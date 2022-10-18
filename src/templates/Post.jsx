@@ -63,12 +63,12 @@ const Post = ({ data }) => {
         title={`${title} | ${siteTitle}`}
         description={excerpt}
         url={`${siteUrl}${slug}`}
-        // image={`${diacriticlessTitle}.jpg`}
-        image={
-          require(`/src/assets/images/${diacriticlessTitle}.jpg`)
-            ? require(`/src/assets/images/${diacriticlessTitle}.jpg`)
-            : "defaultMetaImage"
-        }
+        image={`${siteUrl}/${diacriticlessTitle}.jpg`}
+        // image={
+        //   require(`/src/assets/images/${diacriticlessTitle}.jpg`)
+        //     ? require(`/src/assets/images/${diacriticlessTitle}.jpg`)
+        //     : "defaultMetaImage"
+        // }
       />
 
       <BackLink to="/" title="Vrati se na listu postova">
