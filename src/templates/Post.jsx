@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import {
   BackLink,
   StyledEmailShareButton,
@@ -20,6 +20,14 @@ import {
 } from "react-share"
 import useMediaQueries from "hooks/useMediaQueries"
 import Subscribe from "components/Subscribe"
+import { useState } from "react"
+
+import pisaca from "../assets/images/pisaca-masina.jpg"
+import nocna from "../assets/images/nocna-straza.jpg"
+import drazesni from "../assets/images/drazesni-pupoljci-svibanjski.jpg"
+import spektakularan from "../assets/images/spektakularan-susret.jpg"
+
+export const postImages = [pisaca, nocna, drazesni, spektakularan]
 
 const Post = ({ data }) => {
   const { isSmall } = useMediaQueries()
@@ -28,6 +36,23 @@ const Post = ({ data }) => {
   const { title, date, update, tags, series } = post.frontmatter
   const { excerpt } = post
   const { readingTime, slug } = post.fields
+  const [metaImage, setMetaImage] = useState(`${siteUrl}/pisaca-masina.jpg`)
+
+  // for metaImages
+  const diacriticlessTitle = title
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .replace("đ", "dj")
+    .replace(/\s+/g, "-") // white spaces
+
+  useEffect(() => {
+    postImages.filter(image => {
+      if (image.slice(8, -37) === diacriticlessTitle) {
+        return setMetaImage(image) // maybe set here baseUrl + diacriticlessTitle)??
+      }
+    })
+  }, [])
 
   let filteredSeries = []
   if (series !== null) {
@@ -46,25 +71,13 @@ const Post = ({ data }) => {
     })
   }
 
-  // for metaImages
-  const diacriticlessTitle = title
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .replace("đ", "dj")
-    .replace(" ", "-")
-
   return (
     <Layout>
       <SEO
         title={`${title} | ${siteTitle}`}
         description={excerpt}
         url={`${siteUrl}${slug}`}
-        image={
-          `${siteUrl}/${diacriticlessTitle}.jpg`
-            ? `${siteUrl}/${diacriticlessTitle}.jpg`
-            : `${siteUrl}/og-image.jpg`
-        }
+        image={metaImage}
       />
 
       <BackLink to="/" title="Vrati se na listu postova">

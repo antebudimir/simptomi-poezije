@@ -63,7 +63,7 @@ const TagsPage = ({ data }) => {
         title={`${siteTitle} | Oznake`}
         description={description}
         url={siteUrl}
-        image={`${siteUrl}/og-image.jpg`}
+        image={`${siteUrl}/pisaca-masina.jpg`}
       />
 
       <TagListWrapper>
