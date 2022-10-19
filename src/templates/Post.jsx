@@ -22,12 +22,11 @@ import useMediaQueries from "hooks/useMediaQueries"
 import Subscribe from "components/Subscribe"
 import { useState } from "react"
 
-import pisaca from "../assets/images/pisaca-masina.jpg"
-import nocna from "../assets/images/nocna-straza.jpg"
-import drazesni from "../assets/images/drazesni-pupoljci-svibanjski.jpg"
-import spektakularan from "../assets/images/spektakularan-susret.jpg"
-
-export const postImages = [pisaca, nocna, drazesni, spektakularan]
+const imageTitles = [
+  "nocna-straza",
+  "drazesni-pupoljci-svibanjski",
+  "spektakularan-susret",
+]
 
 const Post = ({ data }) => {
   const { isSmall } = useMediaQueries()
@@ -47,9 +46,9 @@ const Post = ({ data }) => {
     .replace(/\s+/g, "-") // white spaces
 
   useEffect(() => {
-    postImages.filter(image => {
-      if (image.slice(8, -37) === diacriticlessTitle) {
-        return setMetaImage(image) // maybe set here baseUrl + diacriticlessTitle)??
+    imageTitles.filter(imageTitle => {
+      if (imageTitle === diacriticlessTitle) {
+        return setMetaImage(`${siteUrl}/${imageTitle}.jpg`)
       }
     })
   }, [])
