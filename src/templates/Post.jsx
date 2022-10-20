@@ -47,7 +47,7 @@ const Post = ({ data }) => {
   useEffect(() => {
     postImages.filter(postImage => {
       if (postImage.slice(8, -37) === diacriticlessTitle) {
-        return setMetaImage(`${siteUrl}/${diacriticlessTitle}.jpg`)
+        return setMetaImage(postImage)
       }
     })
   }, [])
