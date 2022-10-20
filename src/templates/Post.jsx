@@ -21,12 +21,11 @@ import {
 } from "react-share"
 import Subscribe from "components/Subscribe"
 import pisacaMasina from "assets/images/pisaca-masina.jpg"
+import nocna from "assets/images/nocna-straza.jpg"
+import drazesni from "assets/images/drazesni-pupoljci-svibanjski.jpg"
+import spektakularan from "assets/images/spektakularan-susret.jpg"
 
-const imageTitles = [
-  "nocna-straza",
-  "drazesni-pupoljci-svibanjski",
-  "spektakularan-susret",
-]
+const postImages = [nocna, drazesni, spektakularan]
 
 const Post = ({ data }) => {
   const { isSmall } = useMediaQueries()
@@ -46,11 +45,14 @@ const Post = ({ data }) => {
     .replace(/\s+/g, "-") // white spaces
 
   useEffect(() => {
-    imageTitles.filter(imageTitle => {
-      if (imageTitle === diacriticlessTitle) {
-        return setMetaImage(`${siteUrl}/${imageTitle}.jpg`)
-      }
-    })
+    function filterMetaImage() {
+      postImages.filter(postImage => {
+        if (postImage.slice(8, -37) === diacriticlessTitle) {
+          return setMetaImage(postImage)
+        }
+      })
+    }
+    filterMetaImage()
   }, [])
 
   let filteredSeries = []
