@@ -20,12 +20,13 @@ import {
   WhatsappIcon,
 } from "react-share"
 import Subscribe from "components/Subscribe"
-import pisacaMasina from "../assets/images/pisaca-masina.jpg"
-import nocna from "../assets/images/nocna-straza.jpg"
-import drazesni from "../assets/images/drazesni-pupoljci-svibanjski.jpg"
-import spektakularan from "../assets/images/spektakularan-susret.jpg"
+import pisacaMasina from "assets/images/pisaca-masina.jpg"
 
-const postImages = [nocna, drazesni, spektakularan]
+const imageTitles = [
+  "nocna-straza",
+  "drazesni-pupoljci-svibanjski",
+  "spektakularan-susret",
+]
 
 const Post = ({ data }) => {
   const { isSmall } = useMediaQueries()
@@ -45,9 +46,9 @@ const Post = ({ data }) => {
     .replace(/\s+/g, "-") // white spaces
 
   useEffect(() => {
-    postImages.filter(postImage => {
-      if (postImage.slice(8, -37) === diacriticlessTitle) {
-        return setMetaImage(postImage)
+    imageTitles.filter(imageTitle => {
+      if (imageTitle === diacriticlessTitle) {
+        return setMetaImage(`${siteUrl}/${imageTitle}.jpg`)
       }
     })
   }, [])
