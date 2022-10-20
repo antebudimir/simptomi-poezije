@@ -23,6 +23,7 @@ import Subscribe from "components/Subscribe"
 import { useState } from "react"
 
 const imageTitles = [
+  "pisaca-masina",
   "nocna-straza",
   "drazesni-pupoljci-svibanjski",
   "spektakularan-susret",
