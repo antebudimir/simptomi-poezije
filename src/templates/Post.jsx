@@ -35,7 +35,7 @@ const Post = ({ data }) => {
   const { title, date, update, tags, series } = post.frontmatter
   const { excerpt } = post
   const { readingTime, slug } = post.fields
-  const [metaImage, setMetaImage] = useState(`${siteUrl}/pisaca-masina.jpg`)
+  // const [metaImage, setMetaImage] = useState(`${siteUrl}/pisaca-masina.jpg`)
 
   // for metaImages
   const diacriticlessTitle = title
@@ -45,13 +45,13 @@ const Post = ({ data }) => {
     .replace("đ", "dj")
     .replace(/\s+/g, "-") // white spaces
 
-  useEffect(() => {
-    imageTitles.filter(imageTitle => {
-      if (imageTitle === diacriticlessTitle) {
-        return setMetaImage(`${siteUrl}/${imageTitle}.jpg`)
-      }
-    })
-  }, [])
+  // useEffect(() => {
+  //   imageTitles.filter(imageTitle => {
+  //     if (imageTitle === diacriticlessTitle) {
+  //       return setMetaImage(`${siteUrl}/${imageTitle}.jpg`)
+  //     }
+  //   })
+  // }, [])
 
   let filteredSeries = []
   if (series !== null) {
@@ -76,7 +76,8 @@ const Post = ({ data }) => {
         title={`${title} | ${siteTitle}`}
         description={excerpt}
         url={`${siteUrl}${slug}`}
-        image={metaImage}
+        // image={metaImage}
+        image={`${siteUrl}/pisaca-masina.jpg`}
       />
 
       <BackLink to="/" title="Vrati se na listu postova">
