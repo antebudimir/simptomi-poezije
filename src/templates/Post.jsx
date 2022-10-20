@@ -1,11 +1,5 @@
-import React, { useEffect } from "react"
-import {
-  BackLink,
-  StyledEmailShareButton,
-  StyledFacebookShareButton,
-  StyledTelegramShareButton,
-  StyledWhatsappShareButton,
-} from "./Post.styled"
+import React, { useEffect, useState } from "react"
+import useMediaQueries from "hooks/useMediaQueries"
 import { graphql } from "gatsby"
 import { title as siteTitle, siteUrl } from "../../blog-config"
 import SEO from "components/SEO"
@@ -13,17 +7,22 @@ import Layout from "components/Layout"
 import Article from "components/Article"
 import { FaArrowLeft } from "react-icons/fa"
 import {
+  BackLink,
+  StyledEmailShareButton,
+  StyledFacebookShareButton,
+  StyledTelegramShareButton,
+  StyledWhatsappShareButton,
+} from "./Post.styled"
+import {
   EmailIcon,
   FacebookIcon,
   TelegramIcon,
   WhatsappIcon,
 } from "react-share"
-import useMediaQueries from "hooks/useMediaQueries"
 import Subscribe from "components/Subscribe"
-import { useState } from "react"
+import pisacaMasina from "assets/images/pisaca-masina.jpg"
 
 const imageTitles = [
-  "pisaca-masina",
   "nocna-straza",
   "drazesni-pupoljci-svibanjski",
   "spektakularan-susret",
@@ -36,7 +35,7 @@ const Post = ({ data }) => {
   const { title, date, update, tags, series } = post.frontmatter
   const { excerpt } = post
   const { readingTime, slug } = post.fields
-  const [metaImage, setMetaImage] = useState(`${siteUrl}/pisaca-masina.jpg`)
+  const [metaImage, setMetaImage] = useState(pisacaMasina)
 
   // for metaImages
   const diacriticlessTitle = title
