@@ -10,15 +10,9 @@ import {
   BackLink,
   StyledEmailShareButton,
   StyledFacebookShareButton,
-  StyledTelegramShareButton,
   StyledWhatsappShareButton,
 } from "./Post.styled"
-import {
-  EmailIcon,
-  FacebookIcon,
-  TelegramIcon,
-  WhatsappIcon,
-} from "react-share"
+import { EmailIcon, FacebookIcon, WhatsappIcon } from "react-share"
 import Subscribe from "components/Subscribe"
 import pisacaMasina from "assets/images/pisaca-masina.jpg"
 
@@ -26,6 +20,7 @@ const imageTitles = [
   "nocna-straza",
   "drazesni-pupoljci-svibanjski",
   "spektakularan-susret",
+  "neunistivi-mile",
 ]
 
 const Post = ({ data }) => {
@@ -99,28 +94,30 @@ const Post = ({ data }) => {
         )}
 
         <StyledEmailShareButton
-          children={<EmailIcon size={48} borderRadius="5" />}
+          // children={<EmailIcon size={48} borderRadius="5" />}
           subject={`Objava "${title}" sa bloga "Simptomi poezije"`}
           body={`<p>Baci oko na ovaj post.</p> <p>Mogao bi ti se svidjeti. 🙂</p>`}
           url={`${siteUrl}${slug}`}
           title={`Podijeli "${title}" putem email-a`}
-        />
+        >
+          <EmailIcon size={48} borderRadius="5" />
+        </StyledEmailShareButton>
+
         <StyledFacebookShareButton
-          children={<FacebookIcon size={48} borderRadius="5" />}
           url={`${siteUrl}${slug}`}
           quote={`Bacite oko na post "${title}" sa bloga "Simptomi poezije". Mogao bi vam se svidjeti. 🙂`}
           title={`Podijeli "${title}" na Facebook-u`}
-        />
-        <StyledTelegramShareButton
-          children={<TelegramIcon size={48} borderRadius="5" />}
-          url={`${siteUrl}${slug}`}
-          title={`Baci oko na ovaj post. Mogao bi ti se svidjeti. 🙂`}
-        />
+        >
+          <FacebookIcon size={48} borderRadius="5" />
+        </StyledFacebookShareButton>
+
         <StyledWhatsappShareButton
-          children={<WhatsappIcon size={48} borderRadius="5" />}
           url={`${siteUrl}${slug}`}
           title={`Baci oko na ovaj post. Mogao bi ti se svidjeti. 🙂`}
-        />
+        >
+          <WhatsappIcon size={48} borderRadius="5" />
+        </StyledWhatsappShareButton>
+
         <Article.Footer previous={previous} next={next} />
       </Article>
 
