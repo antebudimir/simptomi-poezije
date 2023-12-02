@@ -14,7 +14,7 @@ import {
 } from "./Post.styled"
 import { EmailIcon, FacebookIcon, WhatsappIcon } from "react-share"
 import Subscribe from "components/Subscribe"
-import pisacaMasina from "assets/images/pisaca-masina.jpg"
+import pisacaMasina from "assets/images/neunistivi-mile.jpg"
 
 const imageTitles = [
   "nocna-straza",
