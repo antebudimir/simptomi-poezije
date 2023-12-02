@@ -1,7 +1,7 @@
 ---
 title: "Neuništivi Mile"
 description: "Ni riječi o tome kako je sve počelo s laganom glavoboljom. Prvo što je pomislio..."
-date: 2023-11-26
+date: 2023-12-02
 update: 2023-12-02
 tags:
   - poezija
